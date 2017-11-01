@@ -1,0 +1,151 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{listings}
+
+\lstset{numbers=left,
+	title=\lstname,
+	numberstyle=\tiny, 
+	breaklines=true,
+	tabsize=4,
+	language=Python,
+	morekeywords={with,super,as},,
+	frame=single,
+	basicstyle=\footnotesize\tt,
+	commentstyle=\color{comment},
+	keywordstyle=\color{keyword},
+	stringstyle=\color{string},
+	backgroundcolor=\color{white},
+	showstringspaces=false,
+	numbers=left,
+	numbersep=5pt,
+	literate=
+		{æ}{{\ae}}1
+		{å}{{\aa}}1
+		{ø}{{\o}}1
+		{Æ}{{\AE}}1
+		{Å}{{\AA}}1
+		{Ø}{{\O}}1
+	}
+
+\usepackage{bm}
+\usepackage{hyperref}
+\usepackage[margin=1.25 in]{geometry}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{float}
+
+\begin{document}
+\begin{center}
+
+
+{\LARGE\bf
+FYS4150\\
+\vspace{0.5cm}
+Project 3, deadline October 25.
+}
+ \includegraphics[scale=0.075]{uio.png}\\
+Author: Vemund Stenbekk Thorkildsen\\
+\vspace{1cm}
+{\LARGE\bf
+Abstract
+}\\
+\end{center}
+\newpage
+{\LARGE\bf
+Introduction
+}\\
+\noindent The Ising model in two dimensions will be studied and discussed in this report. The model is widely used, both in the study of phase transitions and statistics (source). In this report, the Ising model will be used to study phase transitions. In particular, the transition from a system with magnetic moment, to a system with zero magnetic moment. The Ising model predicts a phase shift at a given temperature. The system studied in this report will be a two dimensional lattice, where each lattice point only can take two different values. These values represent the spin, up-spin or down-spin, but can be represented in many ways. \\
+
+\noindent The report will start off by an analytical solution for the case with a $2 \times 2$ lattice before moving on to solving this system numerically. This will be done by using the Metropolis algorithm. The results computed with the Metropolis algorithm will be compared to the analytic solutions. The main emphasis will be put on the Metropolis algorithm, its efficiency and precision (tror jeg).\\ 
+
+
+
+
+{\LARGE\bf
+Method
+}\\
+
+\noindent It is possible to derive an analytic solution for the simplest of the two dimensional case. Namely a $2 \times 2$ lattice with periodic boundary conditions. The partition dunction is given by:
+
+$$
+Z= \sum\limits_{i=1}^{16}  e^{E_{i-J}\beta}
+$$
+
+\noindent There are 16 different states of energy. Luckily, a lot of these yield the same result. Summing up all of these gives:
+
+$$
+Z=2e^{-8J\beta}+2e^{8J\beta}+12
+$$
+
+\noindent The mean magnetization is given by:
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+\newpage
+{\LARGE\bf
+Results
+}
+
+
+
+
+
+
+
+
+
+
+\newpage
+{\LARGE\bf
+Discussion 
+}
+
+
+
+
+
+
+
+
+
+
+\newpage
+{\LARGE\bf
+Conclusion
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
+{\LARGE\bf
+Reference list
+}
+\end{document}
