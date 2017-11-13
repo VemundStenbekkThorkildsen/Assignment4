@@ -1,0 +1,54 @@
+Average energy: -798.87 and the square of average energy: 638202 while T = 1.000000
+Average magnetization: 399.712 while T = 1.000000
+Specific heat: 9.31924 while T = 1.000000
+Susceptibility: 0.625859 while T = 1.000000
+Variance Energy:9.31924while T=1.000000
+
+Average energy: -793.931 and the square of average energy: 630379 while T = 1.250000
+Average magnetization: 398.405 while T = 1.250000
+Specific heat: 33.3433 while T = 1.250000
+Susceptibility: 3.13454 while T = 1.250000
+Variance Energy:52.0988while T=1.250000
+
+Average energy: -780.486 and the square of average energy: 609336 while T = 1.500000
+Average magnetization: 394.611 while T = 1.500000
+Specific heat: 78.8572 while T = 1.500000
+Susceptibility: 10.8048 while T = 1.500000
+Variance Energy:177.429while T=1.500000
+
+Average energy: -751.957 and the square of average energy: 565914 while T = 1.750000
+Average magnetization: 385.593 while T = 1.750000
+Specific heat: 155.146 while T = 1.750000
+Susceptibility: 35.4166 while T = 1.750000
+Variance Energy:475.134while T=1.750000
+
+Average energy: -698.094 and the square of average energy: 488506 while T = 2.000000
+Average magnetization: 364.372 while T = 2.000000
+Specific heat: 292.725 while T = 2.000000
+Susceptibility: 163.435 while T = 2.000000
+Variance Energy:1170.9while T=2.000000
+
+Average energy: -590.025 and the square of average energy: 351300 while T = 2.250000
+Average magnetization: 289.434 while T = 2.250000
+Specific heat: 626.314 while T = 2.250000
+Susceptibility: 2095.37 while T = 2.250000
+Variance Energy:3170.72while T=2.250000
+
+Average energy: -447.49 and the square of average energy: 202758 while T = 2.500000
+Average magnetization: 128.49 while T = 2.500000
+Specific heat: 401.794 while T = 2.500000
+Susceptibility: 2629.16 while T = 2.500000
+Variance Energy:2511.21while T=2.500000
+
+Average energy: -374.127 and the square of average energy: 141663 while T = 2.750000
+Average magnetization: 72.7805 while T = 2.750000
+Specific heat: 223.746 while T = 2.750000
+Susceptibility: 1006.77 while T = 2.750000
+Variance Energy:1692.08while T=2.750000
+
+Average energy: -326.907 and the square of average energy: 108315 while T = 3.000000
+Average magnetization: 54.6554 while T = 3.000000
+Specific heat: 160.741 while T = 3.000000
+Susceptibility: 546.584 while T = 3.000000
+Variance Energy:1446.67while T=3.000000
+Press <RETURN> to close this window...

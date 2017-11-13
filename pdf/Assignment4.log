@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.21)  1 NOV 2017 17:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.21)  13 NOV 2017 16:43
 entering extended mode
 **./Assignment4.tex
 (Assignment4.tex
@@ -464,6 +464,69 @@ File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
+(C:\Users\vemun\AppData\Roaming\MiKTeX\2.9\tex\latex\refstyle\refstyle.sty
+Package: refstyle 2010/11/02 v0.5 Reference formatting (DNJ Els)
+Package refstyle Info: Config file refstyle.cfg used on input line 322.
+
+(C:\Users\vemun\AppData\Roaming\MiKTeX\2.9\tex\latex\refstyle\refstyle.cfg
+File: refstyle.cfg 2010/11/02 0.5 Configuration file for refstyle (DNJ Els)
+Package refstyle Info: New reference template \newref{part} on input line 468.
+Package refstyle Info: \partkey created on input line 468.
+Package refstyle Info: \partlabel created on input line 468.
+Package refstyle Info: \partref created on input line 468.
+Package refstyle Info: \Partref created on input line 468.
+Package refstyle Info: \partrangeref created on input line 468.
+Package refstyle Info: \Partrangeref created on input line 468.
+Package refstyle Info: \partpageref created on input line 468.
+Package refstyle Info: New reference template \newref{chap} on input line 501.
+Package refstyle Info: \chapkey created on input line 501.
+Package refstyle Info: \chaplabel created on input line 501.
+Package refstyle Info: \chapref created on input line 501.
+Package refstyle Info: \Chapref created on input line 501.
+Package refstyle Info: \chaprangeref created on input line 501.
+Package refstyle Info: \Chaprangeref created on input line 501.
+Package refstyle Info: \chappageref created on input line 501.
+Package refstyle Info: New reference template \newref{sec} on input line 511.
+Package refstyle Info: \seckey created on input line 511.
+Package refstyle Info: \seclabel created on input line 511.
+Package refstyle Info: \secref created on input line 511.
+Package refstyle Info: \Secref created on input line 511.
+Package refstyle Info: \secrangeref created on input line 511.
+Package refstyle Info: \Secrangeref created on input line 511.
+Package refstyle Info: \secpageref created on input line 511.
+Package refstyle Info: New reference template \newref{eq} on input line 526.
+Package refstyle Info: \eqkey created on input line 526.
+Package refstyle Info: \eqlabel created on input line 526.
+Package refstyle Info: \eqref created on input line 526.
+Package refstyle Info: \Eqref created on input line 526.
+Package refstyle Info: \eqrangeref created on input line 526.
+Package refstyle Info: \Eqrangeref created on input line 526.
+Package refstyle Info: \eqpageref created on input line 526.
+Package refstyle Info: New reference template \newref{fig} on input line 544.
+Package refstyle Info: \figkey created on input line 544.
+Package refstyle Info: \figlabel created on input line 544.
+Package refstyle Info: \figref created on input line 544.
+Package refstyle Info: \Figref created on input line 544.
+Package refstyle Info: \figrangeref created on input line 544.
+Package refstyle Info: \Figrangeref created on input line 544.
+Package refstyle Info: \figpageref created on input line 544.
+Package refstyle Info: New reference template \newref{tab} on input line 553.
+Package refstyle Info: \tabkey created on input line 553.
+Package refstyle Info: \tablabel created on input line 553.
+Package refstyle Info: \tabref created on input line 553.
+Package refstyle Info: \Tabref created on input line 553.
+Package refstyle Info: \tabrangeref created on input line 553.
+Package refstyle Info: \Tabrangeref created on input line 553.
+Package refstyle Info: \tabpageref created on input line 553.
+Package refstyle Info: New reference template \newref{fn} on input line 568.
+Package refstyle Info: \fnkey created on input line 568.
+Package refstyle Info: \fnlabel created on input line 568.
+Package refstyle Info: \fnref created on input line 568.
+Package refstyle Info: \Fnref created on input line 568.
+Package refstyle Info: \fnrangeref created on input line 568.
+Package refstyle Info: \Fnrangeref created on input line 568.
+Package refstyle Info: \fnpageref created on input line 568.
+))
 (C:\Users\vemun\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
@@ -625,23 +688,27 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box30
 \@float@everytoks=\toks25
 \@floatcapt=\box31
-) (Assignment4.aux)
+)
+(C:\Users\vemun\AppData\Roaming\MiKTeX\2.9\tex\latex\commath\commath.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)) (Assignment4.aux)
 \openout1 = `Assignment4.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
 
 (C:\Users\vemun\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -671,7 +738,7 @@ G,.JBIG2,.JB2,.eps]
 )
 \c@lstlisting=\count128
 \AtBeginShipoutBox=\box33
-Package hyperref Info: Link coloring OFF on input line 41.
+Package hyperref Info: Link coloring OFF on input line 44.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -681,9 +748,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count129
 )
-LaTeX Info: Redefining \ref on input line 41.
-LaTeX Info: Redefining \pageref on input line 41.
-LaTeX Info: Redefining \nameref on input line 41.
+LaTeX Info: Redefining \ref on input line 44.
+LaTeX Info: Redefining \pageref on input line 44.
+LaTeX Info: Redefining \nameref on input line 44.
 
 (Assignment4.out) (Assignment4.out)
 \@outlinefile=\write3
@@ -727,64 +794,206 @@ LaTeX Info: Redefining \nameref on input line 41.
 <uio.png, id=3, 2474.24374pt x 2223.30624pt>
 File: uio.png Graphic file (type png)
  <use uio.png>
-Package pdftex.def Info: uio.png used on input line 50.
+Package pdftex.def Info: uio.png used on input line 53.
 (pdftex.def)             Requested size: 185.56027pt x 166.74077pt.
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./uio.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 59--62
+Underfull \hbox (badness 10000) in paragraph at lines 62--65
 
  []
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 63.
+LaTeX Font Info:    Try loading font information for U+msa on input line 66.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 63.
+LaTeX Font Info:    Try loading font information for U+msb on input line 66.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--71
+Underfull \hbox (badness 10000) in paragraph at lines 72--74
 
  []
 
-[2] [3] [4] [5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 151.
- [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 151.
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--158
+
+ []
+
+[3] <RANDOMenergy1.jpg, id=34, 1927.2pt x 966.61125pt>
+File: RANDOMenergy1.jpg Graphic file (type jpg)
+ <use RANDOMenergy1.jpg>
+Package pdftex.def Info: RANDOMenergy1.jpg used on input line 193.
+(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
+
+<RANDOMenergy24.jpg, id=35, 1927.2pt x 966.61125pt>
+File: RANDOMenergy24.jpg Graphic file (type jpg)
+ <use RANDOMenergy24.jpg>
+Package pdftex.def Info: RANDOMenergy24.jpg used on input line 193.
+(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
+
+<UPenergy1.jpg, id=36, 1927.2pt x 966.61125pt>
+File: UPenergy1.jpg Graphic file (type jpg)
+ <use UPenergy1.jpg>
+Package pdftex.def Info: UPenergy1.jpg used on input line 203.
+(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
+
+<UPenergy24.jpg, id=37, 1927.2pt x 966.61125pt>
+File: UPenergy24.jpg Graphic file (type jpg)
+ <use UPenergy24.jpg>
+Package pdftex.def Info: UPenergy24.jpg used on input line 203.
+(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
+
+<RANDOMmag1notabs.jpg, id=40, 1927.2pt x 966.61125pt>
+File: RANDOMmag1notabs.jpg Graphic file (type jpg)
+
+<use RANDOMmag1notabs.jpg>
+Package pdftex.def Info: RANDOMmag1notabs.jpg used on input line 214.
+(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
+
+<RANDOMmag24notabs.jpg, id=41, 1927.2pt x 966.61125pt>
+File: RANDOMmag24notabs.jpg Graphic file (type jpg)
+
+<use RANDOMmag24notabs.jpg>
+Package pdftex.def Info: RANDOMmag24notabs.jpg used on input line 214.
+(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
+ [4pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.218 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.218 
+       <./RANDOMenergy1.jpg> <./RANDOMenergy24.jpg> <./UPenergy1.jpg> <./UPener
+gy24.jpg>] <RANDOMmag1abs.jpg, id=48, 1927.2pt x 966.61125pt>
+File: RANDOMmag1abs.jpg Graphic file (type jpg)
+
+<use RANDOMmag1abs.jpg>
+Package pdftex.def Info: RANDOMmag1abs.jpg used on input line 224.
+(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
+ <RANDOMmag24abs.jpg, id=49, 1927.2pt x 966.61125pt>
+File: RANDOMmag24abs.jpg Graphic file (type jpg)
+
+<use RANDOMmag24abs.jpg>
+Package pdftex.def Info: RANDOMmag24abs.jpg used on input line 224.
+(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
+ <UPmag1notabs.jpg, id=50, 1927.2pt x 966.61125pt>
+File: UPmag1notabs.jpg Graphic file (type jpg)
+
+<use UPmag1notabs.jpg>
+Package pdftex.def Info: UPmag1notabs.jpg used on input line 233.
+(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
+ <UPmag24notabs.jpg, id=51, 1927.2pt x 966.61125pt>
+File: UPmag24notabs.jpg Graphic file (type jpg)
+
+<use UPmag24notabs.jpg>
+Package pdftex.def Info: UPmag24notabs.jpg used on input line 233.
+(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
+ <UPmag1abs.jpg, id=52, 1927.2pt x 966.61125pt>
+File: UPmag1abs.jpg Graphic file (type jpg)
+
+<use UPmag1abs.jpg>
+Package pdftex.def Info: UPmag1abs.jpg used on input line 243.
+(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
+ <UPmag24abs.jpg, id=53, 1927.2pt x 966.61125pt>
+File: UPmag24abs.jpg Graphic file (type jpg)
+
+<use UPmag24abs.jpg>
+Package pdftex.def Info: UPmag24abs.jpg used on input line 243.
+(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
+ <OccurancesRandom.jpg, id=54, 1927.2pt x 966.61125pt>
+File: OccurancesRandom.jpg Graphic file (type jpg)
+
+<use OccurancesRandom.jpg>
+Package pdftex.def Info: OccurancesRandom.jpg used on input line 253.
+(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
+ <OccurancesUp.jpg, id=55, 1927.2pt x 966.61125pt>
+File: OccurancesUp.jpg Graphic file (type jpg)
+
+<use OccurancesUp.jpg>
+Package pdftex.def Info: OccurancesUp.jpg used on input line 253.
+(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
+ [5pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.257 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.257 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.257 
+       <./RANDOMmag1abs.jpg> <./RANDOMmag24abs.jpg> <./RANDOMmag1notabs.jpg> <.
+/RANDOMmag24notabs.jpg> <./UPmag1notabs.jpg> <./UPmag24notabs.jpg>] [6pdfTeX wa
+rning (ext4): destination with the same identifier (name{figure.6}) has been al
+ready used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.259 \newpage
+              pdfTeX warning (ext4): destination with the same identifier (name
+{figure.7}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.259 \newpage
+               <./UPmag1abs.jpg> <./UPmag24abs.jpg> <./OccurancesRandom.jpg> <.
+/OccurancesUp.jpg>] [7] [8] [9]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 327.
+ [10]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 327.
  (Assignment4.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 151.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 151.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 327.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 327.
 Package rerunfilecheck Info: File `Assignment4.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 151.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 327.
  ) 
 Here is how much of TeX's memory you used:
- 8432 strings out of 493323
- 119220 string characters out of 3139066
- 218052 words of memory out of 3000000
- 11861 multiletter control sequences out of 15000+200000
+ 9125 strings out of 493323
+ 128778 string characters out of 3139066
+ 238578 words of memory out of 3000000
+ 12509 multiletter control sequences out of 15000+200000
  8702 words of font info for 33 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,5n,40p,666b,323s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on Assignment4.pdf (6 pages, 254214 bytes).
+ 28i,10n,40p,666b,327s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on Assignment4.pdf (10 pages, 1938868 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
- 7 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 127 PDF objects out of 1000 (max. 8388607)
+ 24 named destinations out of 1000 (max. 500000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

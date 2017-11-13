@@ -1,157 +1,181 @@
-/*
-Program to solve the two-dimensional Ising model The coupling constant J = 1 Boltzmann's constant = 1, temperature has thus dimension energy Metropolis sampling is used. Periodic boundary conditions.
-
-*/
 #include <iostream>
-#include <fstream>
-#include <iomanip>
-#include "lib.h"
+#include <armadillo>
+#include <random>
+
 using namespace std;
-ofstream ofile;
-// inline function for periodic boundary conditions
-inline int periodic(int i, int limit, int add) {
-    return (i+limit+add) % (limit);
-}
-// Function to read in data from screen
-void read_input(int&, int&, double&, double&, double&);
+using namespace arma;
 
-// Function to initialise energy and magnetization
-void initialize(int, double, int **, double&, double&);
+random_device rd;
+mt19937 randomEngine(rd());
+uniform_real_distribution<double> uniformDist(0.0,1.0);
 
-// The metropolis algorithm
-void Metropolis(int, long&, int **, double&, double&, double *);
+ofstream outFile, outFile2, outFile3, outFile4;
 
-// prints to file the results of the calculations
-void output(int, int, double, double *);
-
-// main program
-int main(int argc, char* argv[])
-{ char *outfilename;
-  long idum;
-  int **spin_matrix, n_spins, mcs;
-  double w[17], average[5], initial_temp, final_temp, E, M, temp_step;
-
-
-// Read in output file, abort if there are too few command-line arguments
-  if( argc <= 1 ){ cout << "Bad Usage: " << argv[0] <<
-               " read also output file on same line" << endl;
-      exit(1);
-  }
-
-
-  else{ outfilename=argv[1]; } ofile.open(outfilename);
-
-  // Read in initial values such as size of lattice, temp and cycles
-  read_input(n_spins, mcs, initial_temp, final_temp, temp_step);
-  spin_matrix = (int**) matrix(n_spins, n_spins, sizeof(int));
-  idum = -1; // random starting point
-
-  for ( double temp = initial_temp; temp <= final_temp; temp+=temp_step){
-      // initialise energy and magnetization
-      E = M = 0.;
-      // setup array for possible energy changes
-      for( int de =-8; de <= 8; de++) w[de+8] = 0;
-      for( int de =-8; de <= 8; de+=4) w[de+8] = exp(-de/temp);
-      // initialise array for expectation values
-      for( int i = 0; i < 5; i++) average[i] = 0.;
-      initialize (n_spins, double temp, spin_matrix, E, M);
-      // start Monte Carlo computation
-      for (int cycles = 1; cycles <= mcs; cycles++){
-      Metropolis(n_spins, idum, spin_matrix, E, M, w);
-      // update expectation values
-      average[0] += E;
-      average[1] += E*E;
-      average[2] += M;
-      average[3] += M*M;
-      average[4] += fabs(M);
-      }
-      // print results
-      output(n_spins, mcs, temp, average); }
-      free_matrix((void **) spin_matrix); // free memory
-
-      ofile.close(); // close output file
-
-      return 0;
+double random(){
+    return uniformDist(randomEngine);
 }
 
+void toFile(double Mtemp, double Etemp, double T, int acceptance){
+    outFile << Mtemp << ", " << endl;
+    outFile2 << Etemp << ", " << endl;
+    outFile4 << acceptance << ", " << endl;
+}
 
-void Metropolis(int n_spins, long& idum, int **spin_matrix, double& E, double&M, double *w) {
+void toFile2(int acceptance, double T){
+    outFile3 << T << ", " << acceptance << endl;
+}
 
-    // loop over all spins
-    for(int y =0; y < n_spins; y++) {
-        for (int x= 0; x < n_spins; x++){
-            // Find random position
-            int ix = (int) (ran1(&idum)*(double)n_spins);
-            int iy = (int) (ran1(&idum)*(double)n_spins);
-            int deltaE = 2*spin_matrix[iy][ix]*
-                    (spin_matrix[iy][periodic(ix,n_spins,-1)]+
-                    spin_matrix[periodic(iy,n_spins,-1)][ix] +
-                    spin_matrix[iy][periodic(ix,n_spins,1)] +
-                    spin_matrix[periodic(iy,n_spins,1)][ix]);
-            // Here we perform the Metropolis test
-            if ( ran1(&idum) <= w[deltaE+8] ) {
+mat randomMatrix(mat &A, int L){
 
-                spin_matrix[iy][ix] *= -1; // flip one spin and accept new spin config
-            // update energy and magnetization
-                M += (double) 2*spin_matrix[iy][ix];
-                E += (double) deltaE;
+    for(int i = 0; i < L; i++){
+        for(int j = 0; j < L; j++){
+            if(random() <= 0.5){
+                A(i,j) = 1;
+            }
+            else{
+                A(i,j) = -1;
             }
         }
     }
-} // end of Metropolis sampling over spins
+    return A;
+}
 
 
-// function to initialise energy, spin matrix and magnetization
-void initialize(int n_spins, double temp, int **spin_matrix, double& E, double& M) {
-    // setup spin matrix and intial magnetization
-    for(int y =0; y < n_spins; y++) {
-        for (int x= 0; x < n_spins; x++){
-            if (temp < 1.5) spin_matrix[y][x] = 1; // spin orientation for the ground state
-            M += (double) spin_matrix[y][x];
+void MP(int L, mat &A, vec prob, int &acceptance, double &E, double &Mtemp, double &E_2, double &Etemp, double &M, double &M_2){
+    int xp, xn, yp, yn;
+    double deltaE;
+    for(int x = 0; x < L; x++){
+        for(int y = 0; y < L; y++){
+            int xran=round(random()*(L-1));
+            int yran=round(random()*(L-1));
+
+            xp = (xran + 1) % L;
+            yp = (yran + 1) % L;
+            xn = (xran - 1 + L) % L;
+            yn = (yran - 1 + L) % L;
+
+            deltaE = 2.0 * A(xran,yran) * (  A(xp,yran) + A(xn,yran) + A(xran, yn) + A(xran, yp));
+
+            if(random() <= prob(deltaE + 8)){
+                A(xran, yran) *= -1;
+                Etemp += deltaE;
+
+                Mtemp += 2*A(xran,yran);
+                acceptance += 1;
+
+            }
         }
-    } // setup initial energy
-for(int y =0; y < n_spins; y++) {
-    for (int x= 0; x < n_spins; x++){
-        E -= (double) spin_matrix[y][x]*
-        (spin_matrix[periodic(y,n_spins,-1)][x] +
-         spin_matrix[y][periodic(x,n_spins,-1)]);
     }
-  }
-}// end function initialise
+
+}
+
+
+void openFiles(double T){
+        string outFileName = "magnetization" + to_string(T) + ".txt";
+        string outFileName2 = "energy" + to_string(T) + ".txt";
+        string outFileName4 = "acceptanceMCup" + to_string(T) + ".txt";
+        outFile.open(outFileName);
+        outFile2.open(outFileName2);
+        outFile4.open(outFileName4);
+}
+
+void openFiles2(){
+    string outFileName3 = "TempAcceptanceUp.txt";
+    outFile3.open(outFileName3);
+}
+
+int main()
+{
+    //openFiles2();
+    //double T=1.0;
+    for(double T = 1.0; T <= 3.0; T+=0.25){
+    double k = 1.0; //J/K
+    double beta = 1.0/(k*T);
+    double J = 1.0;
+
+    int mcs = 100000;
+
+    int L = 20;
+
+    openFiles(T);
+
+    mat A = ones(L,L);
+    randomMatrix(A, L);
 
 
 
-void output(int n_spins, int mcs, double temperature, double *average) {
+    //Initial values of the temporary energy
+    double Etemp = 0;
+    for(int x = 0; x<L; x++){
+        for(int y = 0; y<L;y++){
 
-    double norm = 1/((double) (mcs)); // divided by total number of cycles
-    double Eaverage = average[0]*norm;
-    double E2average = average[1]*norm;
-    double Maverage = average[2]*norm;
-    double M2average = average[3]*norm;
-    double Mabsaverage = average[4]*norm;
-    // all expectation values are per spin, divide by 1/n_spins/n_spins
-    double Evariance = (E2average- Eaverage*Eaverage)/n_spins/n_spins;
-    double Mvariance = (M2average - Maverage*Maverage)/n_spins/n_spins;
-    double M2variance = (M2average - Mabsaverage*Mabsaverage)/n_spins/n_spins;
-    double Mvariance = (M2average - Mabsaverage*Mabsaverage)/n_spins/n_spins;
+            int xn = (x - 1 + L) % L;
+            int yn = (y - 1 + L) % L;
 
-    ofile << setiosflags(ios::showpoint | ios::uppercase);
-    ofile << setw(15) << setprecision(8) << temperature;
-    ofile << setw(15) << setprecision(8) << Eaverage/n_spins/n_spins;
-    ofile << setw(15) << setprecision(8) << Evariance/temperature/temperature;
-    // ofile << setw(15) << setprecision(8) << Maverage/n_spins/n_spins;
-    ofile << setw(15) << setprecision(8) << M2variance/temperature;
-    ofile << setw(15) << setprecision(8) << Mabsaverage/n_spins/n_spins << endl;
+            Etemp -= A(x,y) * (  A(xn,y) + A(x, yn));
+        }
+    }
 
-} // end output function
+    double E = 0;
+    double E_2 = 0;
+    double Mtemp = accu(A);
+    double M = 0;
+    double M_2= 0;
+
+    vec prob(17);
+    for(int i=-8; i <= 8; i+=4){
+        prob(i+8) = 0;
+    }
+    for(int i=-8; i <= 8; i+=4){
+        prob(i + 8) = exp(-i/T);
+    }
+
+    int acceptance = 0;
+    for(int cycles=0;cycles<=mcs;cycles++){
+        MP(L, A, prob, acceptance, E, Mtemp, E_2, Etemp, M, M_2);
+
+        int n=1;
+        if((cycles % n) == 0){
+            toFile(Mtemp, Etemp, T, acceptance);
+            E += Etemp;
+            E_2 += Etemp*Etemp;
+            M += abs(Mtemp);
+            M_2 += Mtemp*Mtemp;
+        }
+
+    }
+
+    //toFile2(acceptance, T);
+
+    // Mean energy
+    double averegeE = E/(mcs+1);
+
+    // Mean magnetism
+    double averegeM = (M)/(mcs+1);
+
+    // Specific heat
+    double averegeESquared = E_2/(mcs+1);
+    double heat = (beta*(averegeESquared - (averegeE*averegeE)))/T;
+
+    // Susceptibility
+    double averegeMSquared = (M_2/(mcs+1));
+    double sus = beta*(averegeMSquared - averegeM*averegeM);
 
 
 
+    cout << endl << "Average energy: " << averegeE << " and the square of average energy: " << averegeESquared << " while T = " << to_string(T) << endl;
+    cout << "Average magnetization: " << averegeM <<  " while T = " << to_string(T) << endl;
+    cout << "Specific heat: " << heat << " while T = " << to_string(T) << endl;
+    cout << "Susceptibility: " << sus << " while T = " << to_string(T) << endl;
+    cout << "Variance Energy:" << (heat*T*T)/(L*L) << "while T=" << to_string(T) << endl;
+
+    outFile.close();
+    outFile2.close();
+    outFile4.close();
+    }
+    //outFile3.close();
 
 
 
-
-
-
-
-
+    return 0;
+}
