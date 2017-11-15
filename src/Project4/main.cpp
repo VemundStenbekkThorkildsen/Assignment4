@@ -9,7 +9,7 @@ random_device rd;
 mt19937 randomEngine(rd());
 uniform_real_distribution<double> uniformDist(0.0,1.0);
 
-ofstream outFile, outFile2, outFile3, outFile4;
+ofstream outFile, outFile2, outFile3, outFile4, outFile5, outFile6;
 
 double random(){
     return uniformDist(randomEngine);
@@ -25,6 +25,10 @@ void toFile2(int acceptance, double T){
     outFile3 << T << ", " << acceptance << endl;
 }
 
+void toFile3(int cycles, double E, double M){
+    outFile5 << cycles << "," << E << endl;
+    outFile6 << cycles << "," << M << endl;
+}
 mat randomMatrix(mat &A, int L){
 
     for(int i = 0; i < L; i++){
@@ -84,20 +88,27 @@ void openFiles2(){
     outFile3.open(outFileName3);
 }
 
+void openFiles3(double T){
+    string outFileName5 = "CumEnergyRAND" + to_string(T) +".txt";
+    string outFileName6 = "CumMagneRAND" + to_string(T) +".txt";
+    outFile5.open(outFileName5);
+    outFile6.open(outFileName6);
+}
 int main()
 {
     //openFiles2();
     //double T=1.0;
-    for(double T = 1.0; T <= 3.0; T+=0.25){
+    for(double T = 2.4; T <= 2.4; T+=1.4){
     double k = 1.0; //J/K
     double beta = 1.0/(k*T);
     double J = 1.0;
 
-    int mcs = 100000;
+    int mcs = 1000000;
 
     int L = 20;
 
     openFiles(T);
+    openFiles3(T);
 
     mat A = ones(L,L);
     randomMatrix(A, L);
@@ -137,10 +148,13 @@ int main()
         int n=1;
         if((cycles % n) == 0){
             toFile(Mtemp, Etemp, T, acceptance);
+            toFile3(cycles,E,M);
             E += Etemp;
             E_2 += Etemp*Etemp;
             M += abs(Mtemp);
             M_2 += Mtemp*Mtemp;
+
+
         }
 
     }
@@ -148,10 +162,10 @@ int main()
     //toFile2(acceptance, T);
 
     // Mean energy
-    double averegeE = E/(mcs+1);
+    double averegeE = E/(mcs);
 
     // Mean magnetism
-    double averegeM = (M)/(mcs+1);
+    double averegeM = (M)/(mcs);
 
     // Specific heat
     double averegeESquared = E_2/(mcs+1);
@@ -172,6 +186,8 @@ int main()
     outFile.close();
     outFile2.close();
     outFile4.close();
+    outFile5.close();
+    outFile6.close();
     }
     //outFile3.close();
 

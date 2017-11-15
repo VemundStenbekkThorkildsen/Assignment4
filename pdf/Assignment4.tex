@@ -7,6 +7,7 @@
 \usepackage{graphicx}
 \usepackage{listings}
 \usepackage{refstyle}
+\usepackage{wasysym}
 
 
 \lstset{numbers=left,
@@ -106,7 +107,26 @@ c_v =\frac{64}{k_b T} \frac{1+3cosh(8\beta)}{(cosh(8\beta)+3)^2}
 X=\frac{1}{k_b T} \Bigg(\frac{32^{\frac{8}{k_b T}}+32}{Z} - \Big(\frac{8e^{\frac{8}{k_b T}}+16}{Z}\Big)^2\Bigg)
 \end{equation}
 
-\noindent This problem will be solved by using the metropolis algorithm. 
+\noindent This problem will be solved by using the Metropolis algorithm. The algorithm can be described in ten steps. 
+
+\begin{enumerate}
+\item Establish an initial matrix with size $L \times L$ and compute the energy.
+\item Position yourself at a random point in the lattice and flip one spin.
+\item Compute the energy for this new state.
+\item Compute $\vartriangle E$ 
+\item If the energy is lowered, accept the new configuration and jump to step 9
+\item If the energy is increased, compare $w=e^{-\beta \vartriangle E}$ with a random number.
+\item If the random number is bigger than $w$, reject the new configuration and jump back to step 2.
+\item If the random number is smaller or equal to $w$, accept the new configuration. 
+\item Update expectation values
+\item Repeat $L \times L$ times to let every lattice point get a chance to get picked.
+\end{enumerate}
+\hfill{Hjorth-Jensen., 2015}
+
+\vspace{1cm}
+\noindent This algorithm has a lot of steps, but computations for lower $L$ are quick. As stated earlier, one of the problems in this report will be to find a possible phase change. This will be done by computing for larger L. When increasing L, the computing time increases rapidly. To get a good result within the time-limit, the code has to be parallelized. This will be done by using MPI.  
+
+
 
 
 
@@ -183,7 +203,42 @@ The results for magnetization and susceptibility tell much of the same story. Th
 
   
 \newpage
-all figures of energy and magnetization were plotted with 1 000 000 monte carlo cycles and written to file for every 2500 points 
+\begin{figure} [H]
+\centerline{
+\includegraphics[scale=0.3]{avgEnergy1.jpg}
+}
+\caption{Development of average energy as a function of Monte Carlo cycles. Plotted at T=1.0 with an ordered and random matrix}
+\label{fig:AverageEnergy1}
+\end{figure}
+
+\begin{figure} [H]
+\centerline{
+\includegraphics[scale=0.3]{avgEnergy24.jpg}
+}
+\caption{Development of average energy as a function of Monte Carlo cycles. Plotted at T=2.4 with an ordered and random matrix}
+\label{fig:AverageEnergy24}
+\end{figure}
+
+
+\begin{figure} [H]
+\centerline{
+\includegraphics[scale=0.3]{avgMagn1.jpg}
+}
+\caption{Development of average absolute magnetization as a function of Monte Carlo cycles. Plotted at T=1.0 with an ordered and random matrix}
+\label{fig:AverageMagn1}
+\end{figure}
+
+
+\begin{figure} [H]
+\centerline{
+\includegraphics[scale=0.3]{avgMagn24.jpg}
+}
+\caption{Development of average absolute magnetization as a function of Monte Carlo cycles. Plotted at T=2.4 with an ordered and random matrix}
+\end{figure}
+
+
+
+\noindent All figures of energy and magnetization were plotted with 1 000 000 Monte Carlo cycles and written to file for every 2500 points 
 
 
 \begin{figure} [H]
@@ -212,51 +267,92 @@ all figures of energy and magnetization were plotted with 1 000 000 monte carlo 
 \includegraphics[scale=0.15]{RANDOMmag1notabs.jpg}
 \includegraphics[scale=0.15]{RANDOMmag24notabs.jpg}
 }
-\caption{Random starting matrices magnetization not absolute value}
+\caption{Development of magnetization with random starting matrices for increasing monte carlo cycles.}
 \label{fig:RandomMagNotAbs}
 \end{figure}
 
 
-\begin{figure}
+\begin{figure} [H]
 \centerline{
 \includegraphics[scale=0.15]{RANDOMmag1abs.jpg}
 \includegraphics[scale=0.15]{RANDOMmag24abs.jpg}
 }
-\caption{Random starting matrices magnetization with absolute value }
+\caption{Development of absolute magnetization with random starting matrices for increasing Monte Carlo cycles.}
 \label{fig:RandomMagAbs}
 \end{figure}
+
 
 \begin{figure} [H]
 \centerline{
 \includegraphics[scale=0.15]{UPmag1notabs.jpg}
 \includegraphics[scale=0.15]{UPmag24notabs.jpg}
 }
-\caption{All up starting matrices, magnetism not absolute value}
+\caption{Development of magnetization with all up starting matrices for increasing Monte Carlo cycles}
 \label{fig:UpMagNotAbs}
-\end{figure}
-
-
-\begin{figure}
-\centerline{
-\includegraphics[scale=0.15]{UPmag1abs.jpg}
-\includegraphics[scale=0.15]{UPmag24abs.jpg}
-}
-\caption{All up starting matrices, magnetism absolute value}
-\label{fig:UpMagnetizm}
 \end{figure}
 
 
 \begin{figure} [H]
 \centerline{
+\includegraphics[scale=0.15]{UPmag1abs.jpg}
+\includegraphics[scale=0.15]{UPmag24abs.jpg}
+}
+\caption{Development of absolute magnetization with all up starting matrices for increasing Monte Carlo cycles.}
+\label{fig:UpMagnetizm}
+\end{figure}
+\noindent \figref{RandomMagNotAbs}, \figref{RandomMagAbs}, \figref{UpMagNotAbs} and \figref{UpMagnetizm} shows that the magnetization behaves similarly for $T=1.0$ in all the cases. There is no difference at all when taking the absolute value for the all up initial matrix, because the magnetism is continuously positive to begin with. When the starting matrix is random, the first Monte Carlo cycles is used to reach the equilibrium state. As the random matrix in this instance is closer to an equilibrium state where all the spins point down, it will tend towards this state instead of the configuration with all spins up. These two states have the same energy, hence both states serve as a valid energy equilibrium. \\
+
+\noindent When $T=2.4$ the magnetization fluctuates between being positive and negative in both the ordered and random case. By looking at the absolute magnetization it soon becomes clear that the magnitude of the magnetization is limited to a finite range. the fluctuations are big, but this is to be expected, as there is more energy in the system compared to when $T=2.4$. 
+
+\begin{figure} [H]
+\centerline{
+\includegraphics[scale=0.245]{randomaccept.jpg}
+}
+\caption{Number of accepted configurations for a random initial matrix computed with $10^4$ Monte Carlo cycles for $T=1.0$ and $T=2.4$.}
+\label{fig:RandomAccept}
+\end{figure}
+
+\begin{figure} [H]
+\centerline{
+\includegraphics[scale=0.245]{upaccept.jpg}
+}
+\caption{Number of accepted configurations for an all up initial matrix computed with $10^4$ Monte Carlo cycles for $T=1.0$ and $T=2.4$.}
+\label{fig:UpAccept}
+\end{figure}
+\noindent The system with a random initial matrix at $T=1.0$ accepts many flips in the first few Monte Carlo cycles (\figref{RandomAccept}). This is because it initially is not at the equilibrium state. After it has reached equilibrium, it accepts far fewer moves, and follows the same pattern as \figref{UpAccept} A. When subtracting the number of accepted configurations from the first few cycles in \figref{RandomAccept} A from the total number of accepted configurations, the answer is the same number of accepted configurations as in \figref{UpAccept} A. The total number of accepted configurations is much higher when $T=2.4$, and the difference is negligible between the two.
+
+\newpage 
+\begin{figure}
+\centerline{
+\includegraphics[scale=0.275]{accept.jpg}
+}
+\caption{Total number of accepted configurations as a function of temperature}
+\label{fig:Accept}
+\end{figure}
+\noindent The number of configurations grows exponentially with temperature. The smooth nature of the all spins up initial matrix is contrasted by the graph for a random initial matrix. The uneven nature of this graph is a result of the random initial matrix. 
+
+
+\begin{figure}
+\centerline{
 \includegraphics[scale=0.15]{OccurancesRandom.jpg}
 \includegraphics[scale=0.15]{OccurancesUp.jpg}
 }
-\caption{Occurances of different energies for a random initial matrix and an ordered initial matrix.}
+\caption{Probability distribution for T=2.4 for a random and an all up initial matrix.}
 \label{fig:ProbBoth}
 \end{figure}
 
+\begin{figure} [H]
+\centerline{
+\includegraphics[scale=0.30]{ProbabilityRandom.jpg}
+}
+\caption{Probability distribution for varying temperature. Computed with $10^6$ Monte Carlo cycles.}
+\label{fig:Probability}
+\end{figure}
 
-\newpage
+\begin{center}
+\textbf{Table 3:} Variance in energy for different temperatures computed with a random matrix for different temperatures and $10^6$ Monte carlo cycles.
+\end{center}
+\centerline{
 \begin{tabular}{|l|c|}
 \hline
   Temperature & Variance\\
@@ -280,8 +376,14 @@ all figures of energy and magnetization were plotted with 1 000 000 monte carlo 
   T=3.0 & 1445.91\\
 \hline
 \end{tabular}
-\\
-computed with $10^6$ cycles. 
+}
+
+\noindent The probability distribution shown in \figref{Probability} show that higher energies are to be expected when the temperature is increased. When the temperature is low, there are only a few possible energy states. This is in accordance with the energyplots in \figref{RandomEnergy} and \figref{UpEnergy}. The variance in table 3 is increasing up to $T=2.25$ before decreasing again. This is also shown in \figref{Probability}. The graph representing $T=2.25$ is much wider than all the other graphs. The probability distribution for $T=2.4$ is shown in \figref{ProbBoth}. The graph is skewed towards higher energies. WHY ARE THEY SKEWED?
+
+For T mindre og lik 2.25 er de skewed positivt, og negativt for t større enn 2.25
+
+  
+
 
 
 
@@ -291,7 +393,10 @@ computed with $10^6$ cycles.
 Discussion 
 }
 
+For the $2 \times 2$ case, the expection values showed distinct sensitivities (table 1,2). The mean energy and mean absolute magnetization converged quickly towards the analytic value. Both were accurate with three leading digits for as few as $10^4$ Monte Carlo cycles. When increasing the number of Monte Carlo cycles to $10^6$ the relative error decreases to a fraction of a $\permil$. The specific heat and susceptibility were both sensitive. The specific heat was accurate up to two or three leading digits, depending on the starting matrix, when computed with $10^6$ Monte Carlo cycles. The specific heat was accurate up to only one or two leading digits with $10^6$ Monte Carlo cycles. The program did not produce the same results for each run. This is due to the random nature of the system being examined.
 
+The $20 \times 20$ case was studied with an emphasis on the energy and magnetization for $T=1.0$ and $T=2.4$
+  
 
 
 
@@ -323,5 +428,7 @@ Conclusion
 \newpage
 {\LARGE\bf
 Reference list
-}
+}\\
+Hjort-Jensen,M., 2015. Computational physics, accessible at course github repository. 551 pages
+
 \end{document}

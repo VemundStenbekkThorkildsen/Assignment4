@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.21)  13 NOV 2017 16:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.21)  15 NOV 2017 15:35
 entering extended mode
 **./Assignment4.tex
 (Assignment4.tex
@@ -527,14 +527,21 @@ Package refstyle Info: \fnrangeref created on input line 568.
 Package refstyle Info: \Fnrangeref created on input line 568.
 Package refstyle Info: \fnpageref created on input line 568.
 ))
+(C:\Users\vemun\AppData\Roaming\MiKTeX\2.9\tex\latex\wasysym\wasysym.sty
+Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
+\symwasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 90.
+)
 (C:\Users\vemun\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\bm.sty"
 Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
-\symboldoperators=\mathgroup6
-\symboldletters=\mathgroup7
-\symboldsymbols=\mathgroup8
+\symboldoperators=\mathgroup7
+\symboldletters=\mathgroup8
+\symboldsymbols=\mathgroup9
+\symboldwasy=\mathgroup10
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 207.
 )
@@ -695,20 +702,20 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )) (Assignment4.aux)
 \openout1 = `Assignment4.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
 
 (C:\Users\vemun\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -738,7 +745,7 @@ G,.JBIG2,.JB2,.eps]
 )
 \c@lstlisting=\count128
 \AtBeginShipoutBox=\box33
-Package hyperref Info: Link coloring OFF on input line 44.
+Package hyperref Info: Link coloring OFF on input line 45.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -748,9 +755,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count129
 )
-LaTeX Info: Redefining \ref on input line 44.
-LaTeX Info: Redefining \pageref on input line 44.
-LaTeX Info: Redefining \nameref on input line 44.
+LaTeX Info: Redefining \ref on input line 45.
+LaTeX Info: Redefining \pageref on input line 45.
+LaTeX Info: Redefining \nameref on input line 45.
 
 (Assignment4.out) (Assignment4.out)
 \@outlinefile=\write3
@@ -794,206 +801,328 @@ LaTeX Info: Redefining \nameref on input line 44.
 <uio.png, id=3, 2474.24374pt x 2223.30624pt>
 File: uio.png Graphic file (type png)
  <use uio.png>
-Package pdftex.def Info: uio.png used on input line 53.
+Package pdftex.def Info: uio.png used on input line 54.
 (pdftex.def)             Requested size: 185.56027pt x 166.74077pt.
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./uio.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 62--65
+Underfull \hbox (badness 10000) in paragraph at lines 63--66
 
  []
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 66.
+LaTeX Font Info:    Try loading font information for U+msa on input line 67.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 66.
+LaTeX Font Info:    Try loading font information for U+msb on input line 67.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
+LaTeX Font Info:    Try loading font information for U+wasy on input line 67.
+
+(C:\Users\vemun\AppData\Roaming\MiKTeX\2.9\tex\latex\wasysym\uwasy.fd
+File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
+)
+
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 67.
+
+
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 67.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--74
+Underfull \hbox (badness 10000) in paragraph at lines 73--75
 
  []
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 133--134
+[2] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--158
+Underfull \hbox (badness 10000) in paragraph at lines 155--178
 
  []
 
-[3] <RANDOMenergy1.jpg, id=34, 1927.2pt x 966.61125pt>
+[4] <avgEnergy1.jpg, id=50, 1927.2pt x 966.61125pt>
+File: avgEnergy1.jpg Graphic file (type jpg)
+ <use avgEnergy1.jpg>
+Package pdftex.def Info: avgEnergy1.jpg used on input line 209.
+(pdftex.def)             Requested size: 578.16447pt x 289.98561pt.
+
+<avgEnergy24.jpg, id=51, 1927.2pt x 966.61125pt>
+File: avgEnergy24.jpg Graphic file (type jpg)
+ <use avgEnergy24.jpg>
+Package pdftex.def Info: avgEnergy24.jpg used on input line 217.
+(pdftex.def)             Requested size: 578.16447pt x 289.98561pt.
+ [5pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.221 
+       <./avgEnergy1.jpg>] <avgMagn1.jpg, id=57, 1927.2pt x 966.61125pt>
+File: avgMagn1.jpg Graphic file (type jpg)
+
+<use avgMagn1.jpg>
+Package pdftex.def Info: avgMagn1.jpg used on input line 226.
+(pdftex.def)             Requested size: 578.16447pt x 289.98561pt.
+ [6pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.230 
+       <./avgEnergy24.jpg>] <avgMagn24.jpg, id=63, 1927.2pt x 966.61125pt>
+File: avgMagn24.jpg Graphic file (type jpg)
+
+<use avgMagn24.jpg>
+Package pdftex.def Info: avgMagn24.jpg used on input line 235.
+(pdftex.def)             Requested size: 578.16447pt x 289.98561pt.
+ [7pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.238 
+       <./avgMagn1.jpg>] <RANDOMenergy1.jpg, id=70, 1927.2pt x 966.61125pt>
 File: RANDOMenergy1.jpg Graphic file (type jpg)
- <use RANDOMenergy1.jpg>
-Package pdftex.def Info: RANDOMenergy1.jpg used on input line 193.
-(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
 
-<RANDOMenergy24.jpg, id=35, 1927.2pt x 966.61125pt>
+<use RANDOMenergy1.jpg>
+Package pdftex.def Info: RANDOMenergy1.jpg used on input line 248.
+(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
+ <RANDOMenergy24.jpg, id=71, 1927.2pt x 966.61125pt>
 File: RANDOMenergy24.jpg Graphic file (type jpg)
- <use RANDOMenergy24.jpg>
-Package pdftex.def Info: RANDOMenergy24.jpg used on input line 193.
-(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
 
-<UPenergy1.jpg, id=36, 1927.2pt x 966.61125pt>
+<use RANDOMenergy24.jpg>
+Package pdftex.def Info: RANDOMenergy24.jpg used on input line 248.
+(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
+ <UPenergy1.jpg, id=72, 1927.2pt x 966.61125pt>
 File: UPenergy1.jpg Graphic file (type jpg)
- <use UPenergy1.jpg>
-Package pdftex.def Info: UPenergy1.jpg used on input line 203.
-(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
 
-<UPenergy24.jpg, id=37, 1927.2pt x 966.61125pt>
+<use UPenergy1.jpg>
+Package pdftex.def Info: UPenergy1.jpg used on input line 258.
+(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
+ <UPenergy24.jpg, id=73, 1927.2pt x 966.61125pt>
 File: UPenergy24.jpg Graphic file (type jpg)
- <use UPenergy24.jpg>
-Package pdftex.def Info: UPenergy24.jpg used on input line 203.
+
+<use UPenergy24.jpg>
+Package pdftex.def Info: UPenergy24.jpg used on input line 258.
 (pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
-
-<RANDOMmag1notabs.jpg, id=40, 1927.2pt x 966.61125pt>
-File: RANDOMmag1notabs.jpg Graphic file (type jpg)
-
-<use RANDOMmag1notabs.jpg>
-Package pdftex.def Info: RANDOMmag1notabs.jpg used on input line 214.
-(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
-
-<RANDOMmag24notabs.jpg, id=41, 1927.2pt x 966.61125pt>
-File: RANDOMmag24notabs.jpg Graphic file (type jpg)
-
-<use RANDOMmag24notabs.jpg>
-Package pdftex.def Info: RANDOMmag24notabs.jpg used on input line 214.
-(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
- [4pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
+ [8pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.218 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-2}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.218 
-       <./RANDOMenergy1.jpg> <./RANDOMenergy24.jpg> <./UPenergy1.jpg> <./UPener
-gy24.jpg>] <RANDOMmag1abs.jpg, id=48, 1927.2pt x 966.61125pt>
-File: RANDOMmag1abs.jpg Graphic file (type jpg)
-
-<use RANDOMmag1abs.jpg>
-Package pdftex.def Info: RANDOMmag1abs.jpg used on input line 224.
-(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
- <RANDOMmag24abs.jpg, id=49, 1927.2pt x 966.61125pt>
-File: RANDOMmag24abs.jpg Graphic file (type jpg)
-
-<use RANDOMmag24abs.jpg>
-Package pdftex.def Info: RANDOMmag24abs.jpg used on input line 224.
-(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
- <UPmag1notabs.jpg, id=50, 1927.2pt x 966.61125pt>
-File: UPmag1notabs.jpg Graphic file (type jpg)
-
-<use UPmag1notabs.jpg>
-Package pdftex.def Info: UPmag1notabs.jpg used on input line 233.
-(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
- <UPmag24notabs.jpg, id=51, 1927.2pt x 966.61125pt>
-File: UPmag24notabs.jpg Graphic file (type jpg)
-
-<use UPmag24notabs.jpg>
-Package pdftex.def Info: UPmag24notabs.jpg used on input line 233.
-(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
- <UPmag1abs.jpg, id=52, 1927.2pt x 966.61125pt>
-File: UPmag1abs.jpg Graphic file (type jpg)
-
-<use UPmag1abs.jpg>
-Package pdftex.def Info: UPmag1abs.jpg used on input line 243.
-(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
- <UPmag24abs.jpg, id=53, 1927.2pt x 966.61125pt>
-File: UPmag24abs.jpg Graphic file (type jpg)
-
-<use UPmag24abs.jpg>
-Package pdftex.def Info: UPmag24abs.jpg used on input line 243.
-(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
- <OccurancesRandom.jpg, id=54, 1927.2pt x 966.61125pt>
-File: OccurancesRandom.jpg Graphic file (type jpg)
-
-<use OccurancesRandom.jpg>
-Package pdftex.def Info: OccurancesRandom.jpg used on input line 253.
-(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
- <OccurancesUp.jpg, id=55, 1927.2pt x 966.61125pt>
-File: OccurancesUp.jpg Graphic file (type jpg)
-
-<use OccurancesUp.jpg>
-Package pdftex.def Info: OccurancesUp.jpg used on input line 253.
-(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
- [5pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.257 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-3}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.257 
+l.262 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.257 
-       <./RANDOMmag1abs.jpg> <./RANDOMmag24abs.jpg> <./RANDOMmag1notabs.jpg> <.
-/RANDOMmag24notabs.jpg> <./UPmag1notabs.jpg> <./UPmag24notabs.jpg>] [6pdfTeX wa
-rning (ext4): destination with the same identifier (name{figure.6}) has been al
-ready used, duplicate ignored
+l.262 
+       <./avgMagn24.jpg> <./RANDOMenergy1.jpg> <./RANDOMenergy24.jpg>]
+<RANDOMmag1notabs.jpg, id=82, 1927.2pt x 966.61125pt>
+File: RANDOMmag1notabs.jpg Graphic file (type jpg)
+
+<use RANDOMmag1notabs.jpg>
+Package pdftex.def Info: RANDOMmag1notabs.jpg used on input line 269.
+(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
+
+<RANDOMmag24notabs.jpg, id=83, 1927.2pt x 966.61125pt>
+File: RANDOMmag24notabs.jpg Graphic file (type jpg)
+
+<use RANDOMmag24notabs.jpg>
+Package pdftex.def Info: RANDOMmag24notabs.jpg used on input line 269.
+(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
+ <RANDOMmag1abs.jpg, id=84, 1927.2pt x 966.61125pt>
+File: RANDOMmag1abs.jpg Graphic file (type jpg)
+
+<use RANDOMmag1abs.jpg>
+Package pdftex.def Info: RANDOMmag1abs.jpg used on input line 279.
+(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
+ <RANDOMmag24abs.jpg, id=85, 1927.2pt x 966.61125pt>
+File: RANDOMmag24abs.jpg Graphic file (type jpg)
+
+<use RANDOMmag24abs.jpg>
+Package pdftex.def Info: RANDOMmag24abs.jpg used on input line 279.
+(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
+ <UPmag1notabs.jpg, id=86, 1927.2pt x 966.61125pt>
+File: UPmag1notabs.jpg Graphic file (type jpg)
+
+<use UPmag1notabs.jpg>
+Package pdftex.def Info: UPmag1notabs.jpg used on input line 289.
+(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
+ <UPmag24notabs.jpg, id=87, 1927.2pt x 966.61125pt>
+File: UPmag24notabs.jpg Graphic file (type jpg)
+
+<use UPmag24notabs.jpg>
+Package pdftex.def Info: UPmag24notabs.jpg used on input line 289.
+(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
+ [9pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.259 \newpage
+l.293 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+7}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.293 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.293 
+       <./UPenergy1.jpg> <./UPenergy24.jpg> <./RANDOMmag1notabs.jpg> <./RANDOMm
+ag24notabs.jpg> <./RANDOMmag1abs.jpg> <./RANDOMmag24abs.jpg>]
+<UPmag1abs.jpg, id=95, 1927.2pt x 966.61125pt>
+File: UPmag1abs.jpg Graphic file (type jpg)
+ <use UPmag1abs.jpg>
+Package pdftex.def Info: UPmag1abs.jpg used on input line 299.
+(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
+
+<UPmag24abs.jpg, id=96, 1927.2pt x 966.61125pt>
+File: UPmag24abs.jpg Graphic file (type jpg)
+ <use UPmag24abs.jpg>
+Package pdftex.def Info: UPmag24abs.jpg used on input line 299.
+(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--304
+
+ []
+
+<randomaccept.jpg, id=101, 1927.2pt x 966.61125pt>
+File: randomaccept.jpg Graphic file (type jpg)
+ <use randomaccept.jpg>
+Package pdftex.def Info: randomaccept.jpg used on input line 310.
+(pdftex.def)             Requested size: 472.15344pt x 236.81445pt.
+
+[10pdfTeX warning (ext4): destination with the same identifier (name{figure.9})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.314 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.314 
+       <./UPmag1notabs.jpg> <./UPmag24notabs.jpg> <./UPmag1abs.jpg> <./UPmag24a
+bs.jpg>] <upaccept.jpg, id=108, 1927.2pt x 966.61125pt>
+File: upaccept.jpg Graphic file (type jpg)
+ <use upaccept.jpg>
+Package pdftex.def Info: upaccept.jpg used on input line 318.
+(pdftex.def)             Requested size: 472.15344pt x 236.81445pt.
+
+[11pdfTeX warning (ext4): destination with the same identifier (name{figure.11}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.324 \newpage
               pdfTeX warning (ext4): destination with the same identifier (name
-{figure.7}) has been already used, duplicate ignored
+{figure.12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.259 \newpage
-               <./UPmag1abs.jpg> <./UPmag24abs.jpg> <./OccurancesRandom.jpg> <.
-/OccurancesUp.jpg>] [7] [8] [9]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 327.
- [10]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 327.
+l.324 \newpage
+               <./randomaccept.jpg> <./upaccept.jpg>]
+<accept.jpg, id=119, 1927.2pt x 966.61125pt>
+File: accept.jpg Graphic file (type jpg)
+ <use accept.jpg>
+Package pdftex.def Info: accept.jpg used on input line 328.
+(pdftex.def)             Requested size: 529.96695pt x 265.81154pt.
+
+<OccurancesRandom.jpg, id=120, 1927.2pt x 966.61125pt>
+File: OccurancesRandom.jpg Graphic file (type jpg)
+
+<use OccurancesRandom.jpg>
+Package pdftex.def Info: OccurancesRandom.jpg used on input line 339.
+(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
+ <OccurancesUp.jpg, id=121, 1927.2pt x 966.61125pt>
+File: OccurancesUp.jpg Graphic file (type jpg)
+
+<use OccurancesUp.jpg>
+Package pdftex.def Info: OccurancesUp.jpg used on input line 339.
+(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
+ <ProbabilityRandom.jpg, id=122, 1927.2pt x 966.61125pt>
+File: ProbabilityRandom.jpg Graphic file (type jpg)
+
+<use ProbabilityRandom.jpg>
+Package pdftex.def Info: ProbabilityRandom.jpg used on input line 347.
+(pdftex.def)             Requested size: 578.16447pt x 289.98561pt.
+ [12pdfTeX warning (ext4): destination with the same identifier (name{figure.13
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.351 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+14}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.351 
+       <./accept.jpg> <./OccurancesRandom.jpg> <./OccurancesUp.jpg>] [13pdfTeX 
+warning (ext4): destination with the same identifier (name{figure.15}) has been
+ already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.391 \newpage
+               <./ProbabilityRandom.jpg>] [14] [15]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 434.
+ [16]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 434.
  (Assignment4.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 327.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 327.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 434.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 434.
 Package rerunfilecheck Info: File `Assignment4.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 327.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 434.
  ) 
 Here is how much of TeX's memory you used:
- 9125 strings out of 493323
- 128778 string characters out of 3139066
- 238578 words of memory out of 3000000
- 12509 multiletter control sequences out of 15000+200000
- 8702 words of font info for 33 fonts, out of 3000000 for 9000
+ 9377 strings out of 493323
+ 131718 string characters out of 3139066
+ 241287 words of memory out of 3000000
+ 12718 multiletter control sequences out of 15000+200000
+ 9557 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,10n,40p,666b,327s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on Assignment4.pdf (10 pages, 1938868 bytes).
+ 28i,10n,40p,848b,400s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\vemun\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\wasy\dpi600\
+wasy10.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam7.pfb>
+Output written on Assignment4.pdf (16 pages, 2661093 bytes).
 PDF statistics:
- 127 PDF objects out of 1000 (max. 8388607)
- 24 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 210 PDF objects out of 1000 (max. 8388607)
+ 48 named destinations out of 1000 (max. 500000)
+ 116 words of extra memory for PDF output out of 10000 (max. 10000000)
 

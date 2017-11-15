@@ -73,20 +73,20 @@ grid on
 
 %% energyplots for t=1.0 and t=2.4
 
-cyclesE1=linspace(1,length(E1),length(E1))*2500;
-cyclesE24=linspace(1,length(E24),length(E24))*2500;
+cyclesE1=linspace(1,length(E1),length(E1))*5000;
+cyclesE24=linspace(1,length(E24),length(E24))*5000;
 
 figure(3)
-E1=E1/400;
+
 plot(cyclesE1,E1,'linewidth',2)
 title('T=1.0', 'fontsize',28)
 xlabel('Number of cycles', 'fontsize',28)
 ylabel('E','fontsize',28)
-ylim([-2.1,-0.6])
+ylim([-810,-300])
 grid on
 
 figure(4)
-E24=E24/400;
+
 plot(cyclesE24,E24,'linewidth',2)
 title('T=2,4','fontsize',28)
 xlabel('Number of cycles','fontsize',28)
@@ -100,20 +100,20 @@ grid on
 
 %%
 figure(5)
-M1=M1/400;
-M1=abs(M1);
+
+%M1=abs(M1);
 plot(cyclesE1,M1,'linewidth',2)
 title('T=1.0','fontsize',28)
 xlabel('Number of cycles','fontsize',28)
 ylabel('M','fontsize',28)
-ylim([0.2,1.1])
+
 grid on
 
 
 figure(6)
-M24=M24/400;
-M24=abs(M24);
-plot(cyclesE1,M24,'linewidth',2);
+
+%M24=abs(M24);
+plot(cyclesE24,M24,'linewidth',2);
 title('T=2.4','fontsize',28);
 xlabel('number of cycles','fontsize',28)
 ylabel('M','fontsize',28)
@@ -130,6 +130,7 @@ E225=load('energy2.250000.txt');
 E25=load('energy2.500000.txt');
 E275=load('energy2.750000.txt');
 E3=load('energy3.000000.txt');
+
 
 edges1 = unique(E1);
 edges125 = unique(E125);
@@ -173,18 +174,144 @@ xlabel('Energy')
 grid on
 xlim([-800,-100])
 
+skwedd=skewness(E225);
+Skrfgqw=skewness(275)
+%%
+E24=load('energy2.400000.txt');
+edges24 = unique(E24);
+counts24 = histc(E24(:), edges24);
+
+
+figure(8)
+plot (edges24,counts24,'linewidth',2);
+title('T=2.4')
+xlabel('Energy')
+ylabel('number of occurances')
+
+meanE= mean(E24)
+medaiE=median(E24)
+skew=skewness(E24)
+
+
+%% Energy RANDOM matrix
+E24=load('CumEnergyRAND2.400000.txt');
+E1=load('CumEnergyRAND1.000000.txt');
+UE24=load('CumEnergyUP2.400000.txt');
+UE1=load('CumEnergyUP1.000000.txt');
+
+
+avg1=E1(:,2)./E1(:,1);
+avg24=E24(:,2)./E24(:,1);
+Uavg1=UE1(:,2)./UE1(:,1);
+Uavg24=UE24(:,2)./UE24(:,1);
+
+figure(9)
+hold on
+plot(E1(:,1),avg1,'linewidth',2);
+plot(UE1(:,1),Uavg1,'linewidth',2);
+title('Average energy when T=1.0','fontsize',28)
+xlabel('Monte carlo cycles','fontsize',28);
+ylabel('Average Energy','fontsize',28)
+p=legend('Random Matrix','Up matrix')
+ylim([-810,-200])
+p.FontSize=28;
+grid on
+
+figure(10)
+hold on
+plot(E24(:,1),avg24,'linewidth',2);
+plot(UE24(:,1),Uavg24,'linewidth',2);
+title('Average energy when T=2.4','fontsize',28)
+xlabel('Monte carlo cycles','fontsize',28);
+ylabel('Average Energy','fontsize',28)
+l=legend('Random Matrix','Up matrix')
+l.FontSize=28;
+grid on
+
+%% magnetization RAND and UP matrix
+UM24=load('CumMagneUP2.400000.txt');
+UM1=load('CumMagneUP1.000000.txt');
+M24=load('CumMagneRAND2.400000.txt');
+M1=load('CumMagneRAND1.000000.txt');
 
 
 
+avgM1=(M1(:,2)./M1(:,1));
+avgM24=M24(:,2)./M24(:,1);
+UavgM1=(UM1(:,2)./UM1(:,1));
+UavgM24=UM24(:,2)./UM24(:,1);
+
+
+figure(11)
+hold on
+plot(M1(:,1),avgM1,'linewidth',2);
+plot(UM1(:,1),UavgM1,'linewidth',2);
+title('Average absolute magnetization when T=1.0','fontsize',28)
+p=legend('Random Matrix','Up matrix')
+p.FontSize=28;
+xlabel('Monte carlo cycles','fontsize',28);
+ylabel('Average Absolute magnetization','fontsize',28)
+ylim([50,410])
+grid on
+
+figure(12)
+hold on
+plot(M24(:,1),avgM24,'linewidth',2);
+plot(UM24(:,1),UavgM24,'linewidth',2);
+title('Average absolute magnetization when T=2.4','fontsize',28)
+l=legend('Random Matrix','Up matrix')
+l.FontSize=28;
+xlabel('Monte carlo cycles','fontsize',28);
+ylabel('Average Absolute magnetization','fontsize',28)
+grid on
+
+
+%% Magnetization up matrix
+UM24=load('CumMagneUP2.400000.txt');
+UM1=load('CumMagneUP1.000000.txt');
 
 
 
+UavgM1=(UM1(:,2)./UM1(:,1));
+UavgM24=UM24(:,2)./UM24(:,1);
+
+figure(15)
+plot(UM1(:,1),UavgM1,'linewidth',2);
+title('Average absolute magnetization when T=1.0','fontsize',28)
+xlabel('Monte carlo cycles','fontsize',28);
+ylabel('Absolute magnetizm','fontsize',28)
+grid on
+
+figure(16)
+plot(UM24(:,1),UavgM24,'linewidth',2);
+title('Average absolute magnetization when T=2.4','fontsize',28)
+xlabel('Monte carlo cycles','fontsize',28);
+ylabel('Absolute magnetism','fontsize',28)
+grid on
 
 
+%% Energy UP matrix
 
 
+UE1(1,2)=UE1(1,2)/100;
+UE24(1,2)=UE24(1,2)/100;
 
+Uavg1=UE1(:,2)./UE1(:,1);
+Uavg24=UE24(:,2)./UE24(:,1);
 
+figure(13)
+plot(UE1(:,1),Uavg1,'linewidth',2);
+title('Average energy when T=1.0','fontsize',28)
+xlabel('Monte carlo cycles','fontsize',28);
+ylabel('Energy','fontsize',28)
+grid on
+
+figure(14)
+plot(UE24(:,1),Uavg24,'linewidth',2);
+title('Average energy when T=2.4','fontsize',28)
+xlabel('Monte carlo cycles','fontsize',28);
+ylabel('Energy','fontsize',28)
+grid on
 
 
 
