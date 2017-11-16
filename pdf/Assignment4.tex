@@ -228,13 +228,13 @@ The results for magnetization and susceptibility tell much of the same story. Th
 \includegraphics[scale=0.15]{RANDOMenergy1.jpg}
 \includegraphics[scale=0.15]{UPenergy1.jpg}
 }
-\caption{Energy of random initial matrix per lattice point plotted against number of monte carlo cycles for T=1.0 and T=2.4}
+\caption{Energy per cycle of random and all up initial configuration for $T=1$}
 \label{fig:EnergyPerCycle1}
 \end{figure}
 
-\noindent It is clear to see in \figref{AverageEnergy1} and \figref{EnergyPerCycle1} that the energy quickly converges to a steady state around $-2$ per spin, or $-800$ for the entire system. For the all up initial configuration, it is already at this steady state (\figref{EnergyPerCycle1}). This equilibrium state is confined to a small number of energy levels.  
+\noindent It is clear to see in \figref{AverageEnergy1} and \figref{EnergyPerCycle1} that the energy quickly converges to a steady state around $-2$ per spin, or $-800$ for the entire system. For the all up initial configuration, it is already at this steady state (\figref{EnergyPerCycle1}). This equilibrium state is confined to a small number of energy levels, and after as low as $10^4$ cycles both seem to have reached the equilibrium. The nature of this low temperature system will be discussed later in the report. 
 
-For $T=2.4$ the energy also converges to an equilibrium state, but the energy fluctuates more than for lower temperature. This is to be expected, because there is more energy in the system, and will be elaborated further later in the report.
+
 
 
 \begin{figure} [H]
@@ -250,37 +250,31 @@ For $T=2.4$ the energy also converges to an equilibrium state, but the energy fl
 \includegraphics[scale=0.15]{RANDOMenergy24.jpg}
 \includegraphics[scale=0.15]{UPenergy24.jpg}
 }
-\caption{Energy of all spins up initital matrix plotted against number of monte carlo cycles}
-\label{fig:UpEnergy}
+\caption{Energy per cycle of a random and all up initial matrix for $T=2.4$}
+\label{fig:EnergyPerCycle24}
 \end{figure}
 
+\noindent For $T=2.4$ the energy also converges to an equilibrium state, but the energy fluctuates more than for lower temperature. This is to be expected, because there is more energy in the system, and will be elaborated further later in the report. The equilibrium is located at a higher energy than in \figref{AverageEnergy1}. As an effect of this, the all up initial matrix is not already at the energy equilibrium. After about $10^5$ cycles, it is safe to say that the equilibrium is reached (\figref{AverageEnergy24}).
 
 \begin{figure} [H]
 \centerline{
 \includegraphics[scale=0.3]{avgMagn1.jpg}
 }
-\caption{Development of average absolute magnetization as a function of Monte Carlo cycles. Plotted at T=1.0 with an ordered and random matrix}
+\caption{Development of average absolute magnetization as a function of Monte Carlo cycles. Plotted at T=1.0 with an ordered and a random matrix}
 \label{fig:AverageMagn1}
 \end{figure}
 
 \begin{figure} [H]
 \centerline{
 \includegraphics[scale=0.15]{RANDOMmag1notabs.jpg}
-\includegraphics[scale=0.15]{UPmag1notabs.jpg}
-}
-\caption{Development of magnetization with random starting matrices for increasing monte carlo cycles.}
-\label{fig:RandomMagNotAbs}
-\end{figure}
-
-
-\begin{figure} [H]
-\centerline{
 \includegraphics[scale=0.15]{RANDOMmag1abs.jpg}
-\includegraphics[scale=0.15]{UPmag1abs.jpg}
 }
-\caption{Development of absolute magnetization with random starting matrices for increasing Monte Carlo cycles.}
-\label{fig:RandomMagAbs}
+\caption{Development of magnetization and absolute magnetization per cycle with random starting matrices for increasing Monte Carlo cycles.}
+\label{fig:RandomMag1}
 \end{figure}
+
+\noindent As with the energy shown in \figref{AverageEnergy1}, the magnetization also converges quickly when the temperature is low (\figref{AverageMagn1}). It seems to have reached an equilibrium after $\approx 10^4$ cycles. The absolute magnetization behaves differently than the normal magnetization (\figref{RandomMagn1}). This difference is not possible to see in the energy plots, and indicates that there are more than one configuration that serve as an energy minimum. There is no point in including the all up initial matrices, as it is already an energy minimum of all spins pointing up, and the absolute value would yield the same result.  
+
 
 
 \begin{figure} [H]
@@ -294,40 +288,15 @@ For $T=2.4$ the energy also converges to an equilibrium state, but the energy fl
 \begin{figure} [H]
 \centerline{
 \includegraphics[scale=0.15]{RANDOMmag24notabs.jpg}
-\includegraphics[scale=0.15]{UPmag24notabs.jpg}
-}
-\caption{Development of magnetization with all up starting matrices for increasing Monte Carlo cycles}
-\label{fig:UpMagNotAbs}
-\end{figure}
-
-
-\begin{figure} [H]
-\centerline{
 \includegraphics[scale=0.15]{RANDOMmag24abs.jpg}
-\includegraphics[scale=0.15]{UPmag24abs.jpg}
 }
-\caption{Development of absolute magnetization with all up starting matrices for increasing Monte Carlo cycles.}
-\label{fig:UpMagnetizm}
+\caption{Development of magnetization and absolute magnetization per cycle with random starting matrices for increasing Monte Carlo cycles}
+\label{fig:RandomMag24}
 \end{figure}
 
 
-\noindent All figures of energy and magnetization were plotted with 1 000 000 Monte Carlo cycles and written to file for every 2500 points 
 
-
-
-
-
-
-
- 
-
-
-
-
-
-\noindent \figref{RandomMagNotAbs}, \figref{RandomMagAbs}, \figref{UpMagNotAbs} and \figref{UpMagnetizm} shows that the magnetization behaves similarly for $T=1.0$ in all the cases. There is no difference at all when taking the absolute value for the all up initial matrix, because the magnetism is continuously positive to begin with. When the starting matrix is random, the first Monte Carlo cycles is used to reach the equilibrium state. As the random matrix in this instance is closer to an equilibrium state where all the spins point down, it will tend towards this state instead of the configuration with all spins up. These two states have the same energy, hence both states serve as a valid energy equilibrium. \\
-
-\noindent When $T=2.4$ the magnetization fluctuates between being positive and negative in both the ordered and random case. By looking at the absolute magnetization it soon becomes clear that the magnitude of the magnetization is limited to a finite range. the fluctuations are big, but this is to be expected, as there is more energy in the system compared to when $T=2.4$. 
+\noindent As in the energy case for $T=2.4$, none of the initial configurations are at the equilibrium. After about $10^5$ Monte Carlo cycles they seem to have reached the equilibrium. When $T=2.4$ the magnetization fluctuates between being positive and negative (\figref{RandomMag24}) By looking at the absolute magnetization it soon becomes clear that the magnitude of the magnetization is limited to a finite range. The fluctuations are big, but this is to be expected, as there is more energy in the system. 
 
 \begin{figure} [H]
 \centerline{
@@ -344,10 +313,9 @@ For $T=2.4$ the energy also converges to an equilibrium state, but the energy fl
 \caption{Number of accepted configurations for an all up initial matrix computed with $10^4$ Monte Carlo cycles for $T=1.0$ and $T=2.4$.}
 \label{fig:UpAccept}
 \end{figure}
-\noindent The system with a random initial matrix at $T=1.0$ accepts many flips in the first few Monte Carlo cycles (\figref{RandomAccept}). This is because it initially is not at the equilibrium state. After it has reached equilibrium, it accepts far fewer moves, and follows the same pattern as \figref{UpAccept} A. When subtracting the number of accepted configurations from the first few cycles in \figref{RandomAccept} A from the total number of accepted configurations, the answer is the same number of accepted configurations as in \figref{UpAccept} A. The total number of accepted configurations is much higher when $T=2.4$, and the difference is negligible between the two.
-
-\newpage 
-\begin{figure}
+\noindent The system with a random initial matrix at $T=1.0$ accepts many flips in the first few Monte Carlo cycles (\figref{RandomAccept}). This is because it initially is not at the equilibrium state. After it has reached equilibrium, it accepts far fewer moves, and follows the same pattern as \figref{UpAccept} for $T=1.0$. The total number of accepted configurations for the all up initial matrix at $T=1.0$ is the same as the accepted configurations for the random case after it has reached the equilibrium. The total number of accepted configurations is much higher when $T=2.4$, and the difference is negligible between the two. At this temperature, none of starting configurations are at the equilibrium, and will both accept many flips in the first cycles. 
+ 
+\begin{figure} [H]
 \centerline{
 \includegraphics[scale=0.275]{accept.jpg}
 }
@@ -357,7 +325,7 @@ For $T=2.4$ the energy also converges to an equilibrium state, but the energy fl
 \noindent The number of configurations grows exponentially with temperature. The smooth nature of the all spins up initial matrix is contrasted by the graph for a random initial matrix. The uneven nature of this graph is a result of the random initial matrix. 
 
 
-\begin{figure}
+\begin{figure} [H]
 \centerline{
 \includegraphics[scale=0.15]{OccurancesRandom.jpg}
 \includegraphics[scale=0.15]{OccurancesUp.jpg}
@@ -368,7 +336,7 @@ For $T=2.4$ the energy also converges to an equilibrium state, but the energy fl
 
 \begin{figure} [H]
 \centerline{
-\includegraphics[scale=0.30]{ProbabilityRandom.jpg}
+\includegraphics[scale=0.30]{ProbabilityRandomNew.jpg}
 }
 \caption{Probability distribution for varying temperature. Computed with $10^6$ Monte Carlo cycles.}
 \label{fig:Probability}
