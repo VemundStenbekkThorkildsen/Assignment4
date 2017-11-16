@@ -119,6 +119,34 @@ xlabel('number of cycles','fontsize',28)
 ylabel('M','fontsize',28)
 grid on
 
+%% appearances for T=2.4,T=1.8
+E24=load('energy2.400000.txt');
+E18=load('energy1.800000.txt');
+edges24 = unique(E24);
+edges18 = unique(E18);
+counts24 = histc(E24(:), edges24);
+counts18 = histc(E18(:), edges18);
+
+
+figure(7)
+hold on 
+plot (edges24,counts24,'linewidth',2);
+plot ([-495.2696  -495.2696],ylim,'linewidth',2)
+title('T=2.4','fontsize',28)
+ylabel('number of occurences','fontsize',28)
+xlabel('Energy','fontsize',28)
+z=legend('Occurances','Mean value')
+z.FontSize=28;
+grid on
+xlim([-800,-100])
+
+figure(8)
+plot (edges18,counts18,'linewidth',2);
+ylabel('number of occurences')
+xlabel('Energy')
+grid on
+xlim([-800,-100])
+
 
 %% number of appeareances per energy 
 E1=load('energy1.000000.txt');
@@ -155,7 +183,7 @@ counts3 = histc(E3(:), edges3);
 
 
 
-figure(7)
+figure(9)
 hold all
 plot (edges1,counts1,'linewidth',2);
 plot (edges125,counts125,'linewidth',2);
@@ -176,22 +204,6 @@ xlim([-800,-100])
 
 skwedd=skewness(E225);
 Skrfgqw=skewness(275)
-%%
-E24=load('energy2.400000.txt');
-edges24 = unique(E24);
-counts24 = histc(E24(:), edges24);
-
-
-figure(8)
-plot (edges24,counts24,'linewidth',2);
-title('T=2.4')
-xlabel('Energy')
-ylabel('number of occurances')
-
-meanE= mean(E24)
-medaiE=median(E24)
-skew=skewness(E24)
-
 
 %% Energy RANDOM matrix
 E24=load('CumEnergyRAND2.400000.txt');
@@ -205,25 +217,25 @@ avg24=E24(:,2)./E24(:,1);
 Uavg1=UE1(:,2)./UE1(:,1);
 Uavg24=UE24(:,2)./UE24(:,1);
 
-figure(9)
+figure(10)
 hold on
 plot(E1(:,1),avg1,'linewidth',2);
 plot(UE1(:,1),Uavg1,'linewidth',2);
 title('Average energy when T=1.0','fontsize',28)
 xlabel('Monte carlo cycles','fontsize',28);
-ylabel('Energy','fontsize',28)
+ylabel('Average Energy','fontsize',28)
 p=legend('Random Matrix','Up matrix')
 ylim([-810,-200])
 p.FontSize=28;
 grid on
 
-figure(10)
+figure(11)
 hold on
 plot(E24(:,1),avg24,'linewidth',2);
 plot(UE24(:,1),Uavg24,'linewidth',2);
 title('Average energy when T=2.4','fontsize',28)
 xlabel('Monte carlo cycles','fontsize',28);
-ylabel('Energy','fontsize',28)
+ylabel('Average Energy','fontsize',28)
 l=legend('Random Matrix','Up matrix')
 l.FontSize=28;
 grid on
@@ -242,7 +254,7 @@ UavgM1=(UM1(:,2)./UM1(:,1));
 UavgM24=UM24(:,2)./UM24(:,1);
 
 
-figure(11)
+figure(12)
 hold on
 plot(M1(:,1),avgM1,'linewidth',2);
 plot(UM1(:,1),UavgM1,'linewidth',2);
@@ -250,11 +262,11 @@ title('Average absolute magnetization when T=1.0','fontsize',28)
 p=legend('Random Matrix','Up matrix')
 p.FontSize=28;
 xlabel('Monte carlo cycles','fontsize',28);
-ylabel('Absolute magnetizm','fontsize',28)
+ylabel('Average Absolute magnetization','fontsize',28)
 ylim([50,410])
 grid on
 
-figure(12)
+figure(13)
 hold on
 plot(M24(:,1),avgM24,'linewidth',2);
 plot(UM24(:,1),UavgM24,'linewidth',2);
@@ -262,7 +274,7 @@ title('Average absolute magnetization when T=2.4','fontsize',28)
 l=legend('Random Matrix','Up matrix')
 l.FontSize=28;
 xlabel('Monte carlo cycles','fontsize',28);
-ylabel('Absolute magnetism','fontsize',28)
+ylabel('Average Absolute magnetization','fontsize',28)
 grid on
 
 
@@ -275,14 +287,14 @@ UM1=load('CumMagneUP1.000000.txt');
 UavgM1=(UM1(:,2)./UM1(:,1));
 UavgM24=UM24(:,2)./UM24(:,1);
 
-figure(15)
+figure(14)
 plot(UM1(:,1),UavgM1,'linewidth',2);
 title('Average absolute magnetization when T=1.0','fontsize',28)
 xlabel('Monte carlo cycles','fontsize',28);
 ylabel('Absolute magnetizm','fontsize',28)
 grid on
 
-figure(16)
+figure(15)
 plot(UM24(:,1),UavgM24,'linewidth',2);
 title('Average absolute magnetization when T=2.4','fontsize',28)
 xlabel('Monte carlo cycles','fontsize',28);
@@ -299,14 +311,14 @@ UE24(1,2)=UE24(1,2)/100;
 Uavg1=UE1(:,2)./UE1(:,1);
 Uavg24=UE24(:,2)./UE24(:,1);
 
-figure(13)
+figure(17)
 plot(UE1(:,1),Uavg1,'linewidth',2);
 title('Average energy when T=1.0','fontsize',28)
 xlabel('Monte carlo cycles','fontsize',28);
 ylabel('Energy','fontsize',28)
 grid on
 
-figure(14)
+figure(18)
 plot(UE24(:,1),Uavg24,'linewidth',2);
 title('Average energy when T=2.4','fontsize',28)
 xlabel('Monte carlo cycles','fontsize',28);

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.21)  15 NOV 2017 15:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.21)  16 NOV 2017 17:15
 entering extended mode
 **./Assignment4.tex
 (Assignment4.tex
@@ -842,271 +842,306 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--75
 
  []
 
-[2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--178
+Underfull \hbox (badness 10000) in paragraph at lines 167--190
 
  []
 
-[4] <avgEnergy1.jpg, id=50, 1927.2pt x 966.61125pt>
+[4] <avgEnergy1.jpg, id=52, 1927.2pt x 966.61125pt>
 File: avgEnergy1.jpg Graphic file (type jpg)
  <use avgEnergy1.jpg>
-Package pdftex.def Info: avgEnergy1.jpg used on input line 209.
+Package pdftex.def Info: avgEnergy1.jpg used on input line 221.
 (pdftex.def)             Requested size: 578.16447pt x 289.98561pt.
 
-<avgEnergy24.jpg, id=51, 1927.2pt x 966.61125pt>
+<RANDOMenergy1.jpg, id=53, 1445.4pt x 724.95844pt>
+File: RANDOMenergy1.jpg Graphic file (type jpg)
+ <use RANDOMenergy1.jpg>
+Package pdftex.def Info: RANDOMenergy1.jpg used on input line 230.
+(pdftex.def)             Requested size: 216.80064pt x 108.73907pt.
+
+<UPenergy1.jpg, id=54, 1445.4pt x 724.95844pt>
+File: UPenergy1.jpg Graphic file (type jpg)
+ <use UPenergy1.jpg>
+Package pdftex.def Info: UPenergy1.jpg used on input line 230.
+(pdftex.def)             Requested size: 216.80064pt x 108.73907pt.
+
+<avgEnergy24.jpg, id=58, 1927.2pt x 966.61125pt>
 File: avgEnergy24.jpg Graphic file (type jpg)
  <use avgEnergy24.jpg>
-Package pdftex.def Info: avgEnergy24.jpg used on input line 217.
+Package pdftex.def Info: avgEnergy24.jpg used on input line 243.
 (pdftex.def)             Requested size: 578.16447pt x 289.98561pt.
  [5pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.221 
-       <./avgEnergy1.jpg>] <avgMagn1.jpg, id=57, 1927.2pt x 966.61125pt>
-File: avgMagn1.jpg Graphic file (type jpg)
-
-<use avgMagn1.jpg>
-Package pdftex.def Info: avgMagn1.jpg used on input line 226.
-(pdftex.def)             Requested size: 578.16447pt x 289.98561pt.
- [6pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.230 
-       <./avgEnergy24.jpg>] <avgMagn24.jpg, id=63, 1927.2pt x 966.61125pt>
-File: avgMagn24.jpg Graphic file (type jpg)
-
-<use avgMagn24.jpg>
-Package pdftex.def Info: avgMagn24.jpg used on input line 235.
-(pdftex.def)             Requested size: 578.16447pt x 289.98561pt.
- [7pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.238 
-       <./avgMagn1.jpg>] <RANDOMenergy1.jpg, id=70, 1927.2pt x 966.61125pt>
-File: RANDOMenergy1.jpg Graphic file (type jpg)
-
-<use RANDOMenergy1.jpg>
-Package pdftex.def Info: RANDOMenergy1.jpg used on input line 248.
-(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
- <RANDOMenergy24.jpg, id=71, 1927.2pt x 966.61125pt>
-File: RANDOMenergy24.jpg Graphic file (type jpg)
-
-<use RANDOMenergy24.jpg>
-Package pdftex.def Info: RANDOMenergy24.jpg used on input line 248.
-(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
- <UPenergy1.jpg, id=72, 1927.2pt x 966.61125pt>
-File: UPenergy1.jpg Graphic file (type jpg)
-
-<use UPenergy1.jpg>
-Package pdftex.def Info: UPenergy1.jpg used on input line 258.
-(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
- <UPenergy24.jpg, id=73, 1927.2pt x 966.61125pt>
-File: UPenergy24.jpg Graphic file (type jpg)
-
-<use UPenergy24.jpg>
-Package pdftex.def Info: UPenergy24.jpg used on input line 258.
-(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
- [8pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.262 
+l.247 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
-5}) has been already used, duplicate ignored
+2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.262 
-       <./avgMagn24.jpg> <./RANDOMenergy1.jpg> <./RANDOMenergy24.jpg>]
-<RANDOMmag1notabs.jpg, id=82, 1927.2pt x 966.61125pt>
+l.247 
+       <./avgEnergy1.jpg> <./RANDOMenergy1.jpg> <./UPenergy1.jpg>]
+<RANDOMenergy24.jpg, id=65, 1927.2pt x 966.61125pt>
+File: RANDOMenergy24.jpg Graphic file (type jpg)
+ <use RANDOMenergy24.jpg>
+Package pdftex.def Info: RANDOMenergy24.jpg used on input line 252.
+(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
+
+<UPenergy24.jpg, id=66, 1927.2pt x 966.61125pt>
+File: UPenergy24.jpg Graphic file (type jpg)
+ <use UPenergy24.jpg>
+Package pdftex.def Info: UPenergy24.jpg used on input line 252.
+(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
+
+<avgMagn1.jpg, id=67, 1927.2pt x 966.61125pt>
+File: avgMagn1.jpg Graphic file (type jpg)
+ <use avgMagn1.jpg>
+Package pdftex.def Info: avgMagn1.jpg used on input line 261.
+(pdftex.def)             Requested size: 578.16447pt x 289.98561pt.
+ [6pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.265 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.265 
+       <./avgEnergy24.jpg> <./RANDOMenergy24.jpg> <./UPenergy24.jpg>]
+<RANDOMmag1notabs.jpg, id=74, 1927.2pt x 966.61125pt>
 File: RANDOMmag1notabs.jpg Graphic file (type jpg)
 
 <use RANDOMmag1notabs.jpg>
-Package pdftex.def Info: RANDOMmag1notabs.jpg used on input line 269.
+Package pdftex.def Info: RANDOMmag1notabs.jpg used on input line 270.
 (pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
-
-<RANDOMmag24notabs.jpg, id=83, 1927.2pt x 966.61125pt>
-File: RANDOMmag24notabs.jpg Graphic file (type jpg)
-
-<use RANDOMmag24notabs.jpg>
-Package pdftex.def Info: RANDOMmag24notabs.jpg used on input line 269.
-(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
- <RANDOMmag1abs.jpg, id=84, 1927.2pt x 966.61125pt>
-File: RANDOMmag1abs.jpg Graphic file (type jpg)
-
-<use RANDOMmag1abs.jpg>
-Package pdftex.def Info: RANDOMmag1abs.jpg used on input line 279.
-(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
- <RANDOMmag24abs.jpg, id=85, 1927.2pt x 966.61125pt>
-File: RANDOMmag24abs.jpg Graphic file (type jpg)
-
-<use RANDOMmag24abs.jpg>
-Package pdftex.def Info: RANDOMmag24abs.jpg used on input line 279.
-(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
- <UPmag1notabs.jpg, id=86, 1927.2pt x 966.61125pt>
+ <UPmag1notabs.jpg, id=75, 1927.2pt x 966.61125pt>
 File: UPmag1notabs.jpg Graphic file (type jpg)
 
 <use UPmag1notabs.jpg>
-Package pdftex.def Info: UPmag1notabs.jpg used on input line 289.
+Package pdftex.def Info: UPmag1notabs.jpg used on input line 270.
+(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
+ <RANDOMmag1abs.jpg, id=76, 1927.2pt x 966.61125pt>
+File: RANDOMmag1abs.jpg Graphic file (type jpg)
+
+<use RANDOMmag1abs.jpg>
+Package pdftex.def Info: RANDOMmag1abs.jpg used on input line 280.
+(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
+ <UPmag1abs.jpg, id=77, 1927.2pt x 966.61125pt>
+File: UPmag1abs.jpg Graphic file (type jpg)
+
+<use UPmag1abs.jpg>
+Package pdftex.def Info: UPmag1abs.jpg used on input line 280.
+(pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
+ [7pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.284 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.284 
+       <./avgMagn1.jpg> <./RANDOMmag1notabs.jpg> <./UPmag1notabs.jpg>]
+<avgMagn24.jpg, id=85, 1927.2pt x 966.61125pt>
+File: avgMagn24.jpg Graphic file (type jpg)
+ <use avgMagn24.jpg>
+Package pdftex.def Info: avgMagn24.jpg used on input line 289.
+(pdftex.def)             Requested size: 578.16447pt x 289.98561pt.
+
+<RANDOMmag24notabs.jpg, id=86, 1927.2pt x 966.61125pt>
+File: RANDOMmag24notabs.jpg Graphic file (type jpg)
+
+<use RANDOMmag24notabs.jpg>
+Package pdftex.def Info: RANDOMmag24notabs.jpg used on input line 298.
 (pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
  <UPmag24notabs.jpg, id=87, 1927.2pt x 966.61125pt>
 File: UPmag24notabs.jpg Graphic file (type jpg)
 
 <use UPmag24notabs.jpg>
-Package pdftex.def Info: UPmag24notabs.jpg used on input line 289.
+Package pdftex.def Info: UPmag24notabs.jpg used on input line 298.
 (pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
- [9pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
+ [8pdfTeX warning (ext4): destination with the same identifier (name{figure.7})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.293 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-7}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.293 
+l.302 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.293 
-       <./UPenergy1.jpg> <./UPenergy24.jpg> <./RANDOMmag1notabs.jpg> <./RANDOMm
-ag24notabs.jpg> <./RANDOMmag1abs.jpg> <./RANDOMmag24abs.jpg>]
-<UPmag1abs.jpg, id=95, 1927.2pt x 966.61125pt>
-File: UPmag1abs.jpg Graphic file (type jpg)
- <use UPmag1abs.jpg>
-Package pdftex.def Info: UPmag1abs.jpg used on input line 299.
+l.302 
+       <./RANDOMmag1abs.jpg> <./UPmag1abs.jpg> <./avgMagn24.jpg>]
+<RANDOMmag24abs.jpg, id=94, 1927.2pt x 966.61125pt>
+File: RANDOMmag24abs.jpg Graphic file (type jpg)
+ <use RANDOMmag24abs.jpg>
+Package pdftex.def Info: RANDOMmag24abs.jpg used on input line 308.
 (pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
 
-<UPmag24abs.jpg, id=96, 1927.2pt x 966.61125pt>
+<UPmag24abs.jpg, id=95, 1927.2pt x 966.61125pt>
 File: UPmag24abs.jpg Graphic file (type jpg)
  <use UPmag24abs.jpg>
-Package pdftex.def Info: UPmag24abs.jpg used on input line 299.
+Package pdftex.def Info: UPmag24abs.jpg used on input line 308.
 (pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 303--304
+Underfull \hbox (badness 10000) in paragraph at lines 328--329
 
  []
 
-<randomaccept.jpg, id=101, 1927.2pt x 966.61125pt>
+<randomaccept.jpg, id=100, 1927.2pt x 966.61125pt>
 File: randomaccept.jpg Graphic file (type jpg)
  <use randomaccept.jpg>
-Package pdftex.def Info: randomaccept.jpg used on input line 310.
+Package pdftex.def Info: randomaccept.jpg used on input line 335.
 (pdftex.def)             Requested size: 472.15344pt x 236.81445pt.
 
-[10pdfTeX warning (ext4): destination with the same identifier (name{figure.9})
- has been already used, duplicate ignored
+[9pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.314 
+l.339 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.314 
-       <./UPmag1notabs.jpg> <./UPmag24notabs.jpg> <./UPmag1abs.jpg> <./UPmag24a
-bs.jpg>] <upaccept.jpg, id=108, 1927.2pt x 966.61125pt>
+l.339 
+       <./RANDOMmag24notabs.jpg> <./UPmag24notabs.jpg> <./RANDOMmag24abs.jpg> <
+./UPmag24abs.jpg>] <upaccept.jpg, id=107, 1927.2pt x 966.61125pt>
 File: upaccept.jpg Graphic file (type jpg)
- <use upaccept.jpg>
-Package pdftex.def Info: upaccept.jpg used on input line 318.
-(pdftex.def)             Requested size: 472.15344pt x 236.81445pt.
 
-[11pdfTeX warning (ext4): destination with the same identifier (name{figure.11}
-) has been already used, duplicate ignored
+<use upaccept.jpg>
+Package pdftex.def Info: upaccept.jpg used on input line 343.
+(pdftex.def)             Requested size: 472.15344pt x 236.81445pt.
+ [10pdfTeX warning (ext4): destination with the same identifier (name{figure.11
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.324 \newpage
+l.349 \newpage
               pdfTeX warning (ext4): destination with the same identifier (name
 {figure.12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.324 \newpage
+l.349 \newpage
                <./randomaccept.jpg> <./upaccept.jpg>]
-<accept.jpg, id=119, 1927.2pt x 966.61125pt>
+<accept.jpg, id=118, 1927.2pt x 966.61125pt>
 File: accept.jpg Graphic file (type jpg)
  <use accept.jpg>
-Package pdftex.def Info: accept.jpg used on input line 328.
+Package pdftex.def Info: accept.jpg used on input line 353.
 (pdftex.def)             Requested size: 529.96695pt x 265.81154pt.
 
-<OccurancesRandom.jpg, id=120, 1927.2pt x 966.61125pt>
+<OccurancesRandom.jpg, id=119, 1927.2pt x 966.61125pt>
 File: OccurancesRandom.jpg Graphic file (type jpg)
 
 <use OccurancesRandom.jpg>
-Package pdftex.def Info: OccurancesRandom.jpg used on input line 339.
+Package pdftex.def Info: OccurancesRandom.jpg used on input line 364.
 (pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
- <OccurancesUp.jpg, id=121, 1927.2pt x 966.61125pt>
+ <OccurancesUp.jpg, id=120, 1927.2pt x 966.61125pt>
 File: OccurancesUp.jpg Graphic file (type jpg)
 
 <use OccurancesUp.jpg>
-Package pdftex.def Info: OccurancesUp.jpg used on input line 339.
+Package pdftex.def Info: OccurancesUp.jpg used on input line 364.
 (pdftex.def)             Requested size: 289.06754pt x 144.98543pt.
- <ProbabilityRandom.jpg, id=122, 1927.2pt x 966.61125pt>
+ <ProbabilityRandom.jpg, id=121, 1927.2pt x 966.61125pt>
 File: ProbabilityRandom.jpg Graphic file (type jpg)
 
 <use ProbabilityRandom.jpg>
-Package pdftex.def Info: ProbabilityRandom.jpg used on input line 347.
+Package pdftex.def Info: ProbabilityRandom.jpg used on input line 372.
 (pdftex.def)             Requested size: 578.16447pt x 289.98561pt.
- [12pdfTeX warning (ext4): destination with the same identifier (name{figure.13
+ [11pdfTeX warning (ext4): destination with the same identifier (name{figure.13
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.351 
+l.376 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 14}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.351 
-       <./accept.jpg> <./OccurancesRandom.jpg> <./OccurancesUp.jpg>] [13pdfTeX 
-warning (ext4): destination with the same identifier (name{figure.15}) has been
- already used, duplicate ignored
+l.376 
+       <./accept.jpg> <./OccurancesRandom.jpg> <./OccurancesUp.jpg>]
+
+LaTeX Warning: Reference `fig:RandomEnergy' on page 12 undefined on input line 
+406.
+
+[12pdfTeX warning (ext4): destination with the same identifier (name{figure.15}
+) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.391 \newpage
-               <./ProbabilityRandom.jpg>] [14] [15]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 434.
- [16]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 434.
+l.416 \newpage
+               <./ProbabilityRandom.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 421--422
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 427--428
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 429--430
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 431--432
+
+ []
+
+
+Overfull \hbox (9.70598pt too wide) in paragraph at lines 434--435
+\OT1/cmr/m/n/10 The prob-a-bil-ity dis-tri-bu-tion for $\OML/cmm/m/it/10 T \OT1
+/cmr/m/n/10 = 2\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 4$ seem to have av neg-a-tive 
+skew-ness (right-modal)(figure []14[]).
+ []
+
+[13] [14]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 472.
+ [15]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 472.
  (Assignment4.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 434.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 434.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 472.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 472.
 Package rerunfilecheck Info: File `Assignment4.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 434.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 472.
  ) 
 Here is how much of TeX's memory you used:
- 9377 strings out of 493323
- 131718 string characters out of 3139066
- 241287 words of memory out of 3000000
- 12718 multiletter control sequences out of 15000+200000
+ 9380 strings out of 493323
+ 131775 string characters out of 3139066
+ 241443 words of memory out of 3000000
+ 12720 multiletter control sequences out of 15000+200000
  9557 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,10n,40p,848b,400s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,10n,40p,877b,400s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\vemun\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\wasy\dpi600\
 wasy10.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pf
 b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
@@ -1119,10 +1154,11 @@ msfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on Assignment4.pdf (16 pages, 2661093 bytes).
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam5.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam7.pfb>
+Output written on Assignment4.pdf (15 pages, 2728729 bytes).
 PDF statistics:
- 210 PDF objects out of 1000 (max. 8388607)
- 48 named destinations out of 1000 (max. 500000)
+ 223 PDF objects out of 1000 (max. 8388607)
+ 49 named destinations out of 1000 (max. 500000)
  116 words of extra memory for PDF output out of 10000 (max. 10000000)
 

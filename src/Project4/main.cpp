@@ -98,7 +98,7 @@ int main()
 {
     //openFiles2();
     //double T=1.0;
-    for(double T = 2.4; T <= 2.4; T+=1.4){
+    for(double T = 2.4; T <= 2.4; T+=0.6){
     double k = 1.0; //J/K
     double beta = 1.0/(k*T);
     double J = 1.0;
@@ -111,7 +111,7 @@ int main()
     openFiles3(T);
 
     mat A = ones(L,L);
-    randomMatrix(A, L);
+    //randomMatrix(A, L);
 
 
 
@@ -145,17 +145,18 @@ int main()
     for(int cycles=0;cycles<=mcs;cycles++){
         MP(L, A, prob, acceptance, E, Mtemp, E_2, Etemp, M, M_2);
 
-        int n=1;
-        if((cycles % n) == 0){
+
+       if(cycles >= 100000){
             toFile(Mtemp, Etemp, T, acceptance);
             toFile3(cycles,E,M);
+        }
             E += Etemp;
             E_2 += Etemp*Etemp;
             M += abs(Mtemp);
             M_2 += Mtemp*Mtemp;
 
 
-        }
+
 
     }
 

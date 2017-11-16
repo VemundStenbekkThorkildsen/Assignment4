@@ -124,10 +124,22 @@ X=\frac{1}{k_b T} \Bigg(\frac{32^{\frac{8}{k_b T}}+32}{Z} - \Big(\frac{8e^{\frac
 \hfill{Hjorth-Jensen., 2015}
 
 \vspace{1cm}
-\noindent This algorithm has a lot of steps, but computations for lower $L$ are quick. As stated earlier, one of the problems in this report will be to find a possible phase change. This will be done by computing for larger L. When increasing L, the computing time increases rapidly. To get a good result within the time-limit, the code has to be parallelized. This will be done by using MPI.  
+\noindent This algorithm has a lot of steps, but computations for lower $L$ are quick. As stated earlier, one of the problems in this report will be to find a possible phase change. This will be done by computing for larger L. When increasing L, the computing time increases rapidly. To get a good result within the time-limit, the code has to be parallelized. This will be done by using MPI.\\
+
+\noindent In order to find the critical temperature, it is possible to use this equation:
+
+\begin{equation}
+T_c(L)-T_c(L=\infty)=aL^{-\frac{1}{\nu}}
+\end{equation} 
+
+\noindent Where $L$ is the size of the lattice, $T_c$ is the critical temperature and $\nu$ is a constant equal to $1$. $T_c(L)$ is found graphically, so all we need to do is solve for $T_c(L=\infty)$ and $a$ numerically by using this equation
 
 
+\begin{equation}
+T_c(L)=T_c(L=\infty)+aL^{-\frac{1}{\nu}}
+\end{equation}
 
+This was done using the least squares rule for linear regression. 
 
 
 
@@ -213,10 +225,33 @@ The results for magnetization and susceptibility tell much of the same story. Th
 
 \begin{figure} [H]
 \centerline{
+\includegraphics[scale=0.15]{RANDOMenergy1.jpg}
+\includegraphics[scale=0.15]{UPenergy1.jpg}
+}
+\caption{Energy of random initial matrix per lattice point plotted against number of monte carlo cycles for T=1.0 and T=2.4}
+\label{fig:EnergyPerCycle1}
+\end{figure}
+
+\noindent It is clear to see in \figref{AverageEnergy1} and \figref{EnergyPerCycle1} that the energy quickly converges to a steady state around $-2$ per spin, or $-800$ for the entire system. For the all up initial configuration, it is already at this steady state (\figref{EnergyPerCycle1}). This equilibrium state is confined to a small number of energy levels.  
+
+For $T=2.4$ the energy also converges to an equilibrium state, but the energy fluctuates more than for lower temperature. This is to be expected, because there is more energy in the system, and will be elaborated further later in the report.
+
+
+\begin{figure} [H]
+\centerline{
 \includegraphics[scale=0.3]{avgEnergy24.jpg}
 }
 \caption{Development of average energy as a function of Monte Carlo cycles. Plotted at T=2.4 with an ordered and random matrix}
 \label{fig:AverageEnergy24}
+\end{figure}
+
+\begin{figure} [H]
+\centerline{
+\includegraphics[scale=0.15]{RANDOMenergy24.jpg}
+\includegraphics[scale=0.15]{UPenergy24.jpg}
+}
+\caption{Energy of all spins up initital matrix plotted against number of monte carlo cycles}
+\label{fig:UpEnergy}
 \end{figure}
 
 
@@ -228,44 +263,10 @@ The results for magnetization and susceptibility tell much of the same story. Th
 \label{fig:AverageMagn1}
 \end{figure}
 
-
-\begin{figure} [H]
-\centerline{
-\includegraphics[scale=0.3]{avgMagn24.jpg}
-}
-\caption{Development of average absolute magnetization as a function of Monte Carlo cycles. Plotted at T=2.4 with an ordered and random matrix}
-\end{figure}
-
-
-
-\noindent All figures of energy and magnetization were plotted with 1 000 000 Monte Carlo cycles and written to file for every 2500 points 
-
-
-\begin{figure} [H]
-\centerline{
-\includegraphics[scale=0.15]{RANDOMenergy1.jpg}
-\includegraphics[scale=0.15]{RANDOMenergy24.jpg}
-}
-\caption{Energy of random initial matrix per lattice point plotted against number of monte carlo cycles for T=1.0 and T=2.4}
-\label{fig:RandomEnergy}
-\end{figure}
-
-
-\begin{figure} [H]
-\centerline{
-\includegraphics[scale=0.15]{UPenergy1.jpg}
-\includegraphics[scale=0.15]{UPenergy24.jpg}
-}
-\caption{Energy of all spins up initital matrix plotted against number of monte carlo cycles}
-\label{fig:UpEnergy}
-\end{figure}
-
-\noindent It is clear to see in \figref{RandomEnergy} and \figref{UpEnergy} that the energy quickly converges to a steady state around $-2$ when $T=1.0$. For the all up initial configuration, it is already at this steady state. This equilibrium state is confined to a small number of energy levels. For $T=2.4$ the energy also converges to an equilibrium state, but the energy fluctuates more than for lower temperature. This is to be expected, because there is more energy in the system, and will be elaborated further later in the report. 
-
 \begin{figure} [H]
 \centerline{
 \includegraphics[scale=0.15]{RANDOMmag1notabs.jpg}
-\includegraphics[scale=0.15]{RANDOMmag24notabs.jpg}
+\includegraphics[scale=0.15]{UPmag1notabs.jpg}
 }
 \caption{Development of magnetization with random starting matrices for increasing monte carlo cycles.}
 \label{fig:RandomMagNotAbs}
@@ -275,7 +276,7 @@ The results for magnetization and susceptibility tell much of the same story. Th
 \begin{figure} [H]
 \centerline{
 \includegraphics[scale=0.15]{RANDOMmag1abs.jpg}
-\includegraphics[scale=0.15]{RANDOMmag24abs.jpg}
+\includegraphics[scale=0.15]{UPmag1abs.jpg}
 }
 \caption{Development of absolute magnetization with random starting matrices for increasing Monte Carlo cycles.}
 \label{fig:RandomMagAbs}
@@ -284,7 +285,15 @@ The results for magnetization and susceptibility tell much of the same story. Th
 
 \begin{figure} [H]
 \centerline{
-\includegraphics[scale=0.15]{UPmag1notabs.jpg}
+\includegraphics[scale=0.3]{avgMagn24.jpg}
+}
+\caption{Development of average absolute magnetization as a function of Monte Carlo cycles. Plotted at T=2.4 with an ordered and random matrix}
+\label{fig:AverageMagn24}
+\end{figure}
+
+\begin{figure} [H]
+\centerline{
+\includegraphics[scale=0.15]{RANDOMmag24notabs.jpg}
 \includegraphics[scale=0.15]{UPmag24notabs.jpg}
 }
 \caption{Development of magnetization with all up starting matrices for increasing Monte Carlo cycles}
@@ -294,12 +303,28 @@ The results for magnetization and susceptibility tell much of the same story. Th
 
 \begin{figure} [H]
 \centerline{
-\includegraphics[scale=0.15]{UPmag1abs.jpg}
+\includegraphics[scale=0.15]{RANDOMmag24abs.jpg}
 \includegraphics[scale=0.15]{UPmag24abs.jpg}
 }
 \caption{Development of absolute magnetization with all up starting matrices for increasing Monte Carlo cycles.}
 \label{fig:UpMagnetizm}
 \end{figure}
+
+
+\noindent All figures of energy and magnetization were plotted with 1 000 000 Monte Carlo cycles and written to file for every 2500 points 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
 \noindent \figref{RandomMagNotAbs}, \figref{RandomMagAbs}, \figref{UpMagNotAbs} and \figref{UpMagnetizm} shows that the magnetization behaves similarly for $T=1.0$ in all the cases. There is no difference at all when taking the absolute value for the all up initial matrix, because the magnetism is continuously positive to begin with. When the starting matrix is random, the first Monte Carlo cycles is used to reach the equilibrium state. As the random matrix in this instance is closer to an equilibrium state where all the spins point down, it will tend towards this state instead of the configuration with all spins up. These two states have the same energy, hence both states serve as a valid energy equilibrium. \\
 
 \noindent When $T=2.4$ the magnetization fluctuates between being positive and negative in both the ordered and random case. By looking at the absolute magnetization it soon becomes clear that the magnitude of the magnetization is limited to a finite range. the fluctuations are big, but this is to be expected, as there is more energy in the system compared to when $T=2.4$. 
@@ -393,9 +418,22 @@ For T mindre og lik 2.25 er de skewed positivt, og negativt for t større enn 2.
 Discussion 
 }
 
-For the $2 \times 2$ case, the expection values showed distinct sensitivities (table 1,2). The mean energy and mean absolute magnetization converged quickly towards the analytic value. Both were accurate with three leading digits for as few as $10^4$ Monte Carlo cycles. When increasing the number of Monte Carlo cycles to $10^6$ the relative error decreases to a fraction of a $\permil$. The specific heat and susceptibility were both sensitive. The specific heat was accurate up to two or three leading digits, depending on the starting matrix, when computed with $10^6$ Monte Carlo cycles. The specific heat was accurate up to only one or two leading digits with $10^6$ Monte Carlo cycles. The program did not produce the same results for each run. This is due to the random nature of the system being examined.
+\noindent For the $2 \times 2$ case, the expection values showed distinct sensitivities (table 1,2). The mean energy and mean absolute magnetization converged quickly towards the analytic value. Both were accurate with three leading digits for as few as $10^4$ Monte Carlo cycles. When increasing the number of Monte Carlo cycles to $10^6$ the relative error decreases to a fraction of a $\permil$. The specific heat and susceptibility were both sensitive. The specific heat was accurate up to two or three leading digits, depending on the starting matrix, when computed with $10^6$ Monte Carlo cycles. The specific heat was accurate up to only one or two leading digits with $10^6$ Monte Carlo cycles. The program did not produce the same results for each run. This is due to the random nature of the system being examined.\\
 
-The $20 \times 20$ case was studied with an emphasis on the energy and magnetization for $T=1.0$ and $T=2.4$
+\noindent The $20 \times 20$ case was studied with an emphasis on when the most likely state is reached. As shown in \figref{AverageEnergy1} and \figref{AverageMagn1} the graphs converge quickly towards an equilibrium when $T=1$. This is contrasted by the mean energy and mean absolute magnetization when the temperature is $2.4$(\figref{AverageEnergy24},\figref{AverageMagn24}). This system is governed by the Boltzmann distribution:
+
+$$ e^{-\frac{\vartriangle E}{k_bT}}$$
+
+\noindent To increase the energy, the random number used in the Monte Carlo test must be lower than $e^{-\frac{\vartriangle E}{k_bT}}$  (step 6). At low temperatures, the system will allow fewer energy increases compared to for higher temperatures. This results in faster converging towards the equilibrium for lower temperatures.\\
+
+\noindent Another way to look at this is through a pure physical perspective. When there are high temperatures, by definition, there is more energy in the system. This will lead to more flips, and a higher degree of disorder. With less energy in the system, it is less likely to flip, hence faster converging to an equilibrium.\\
+
+\noindent When starting with a random matrix, there are generally more flips (\figref{RandomAccept},\figref{UpAccept}). When the number of Monte Carlo cycles are increased, this difference becomes almost negligible. When the equilibrium is reached, the increase in accepted flips will behave in a similar fashion. This can be read out of \figref{RandomAccept} and \figref{UpAccept} for $T=1$, as after the first few cycles, the growth of accepted configurations grow at the same rate. For increasing temperature, the number of accepted configurations start growing exponentially. This true for both a random and ordered starting matrix, and is in line with what is to be expected, as the Boltzmann distribution has an exponential relation with temperature.(ER DETTE GREIT Å SKRIVE (skriv om uansett)).\\
+
+
+\noindent The probability distribution for $T=2.4$ seem to have av negative skewness (right-modal)(\figref{ProbBoth}). This means that the majority of the energy occurrences happen to the left of the mean value. This again means that the system prefers to jump down in energy, which is to be expected,as it always wants to be at the lowest possible energy state. Another interesting thing to look at, is how the probability distribution behaves for different temperatures (\figref{Probability}). For lower temperatures, there are only a few lower energy levels that are are occurring frequently. The probability distributions are shifted towards higher energies as the temperatures increase. The distributions become wider moving towards the critical temperature, before narrowing again. This is mirrored by the variance shown in table 3. 
+
+
   
 
 
