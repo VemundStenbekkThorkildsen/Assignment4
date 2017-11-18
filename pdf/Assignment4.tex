@@ -79,26 +79,26 @@ Method
 Z= \sum\limits_{i=1}^{16}  e^{-J*E_{i}\beta}
 \end{equation}
 
-\noindent Where $\beta= \frac{1}{k_b T^2}$.  There are 16 different states of energy. Luckily, a lot of these yield the same result. Summing up all of these gives:
+\noindent Where $\beta= \frac{1}{k_b T}$.  There are 16 different states of energy. Luckily, a lot of these yield the same result. Summing up all of these gives:
 
 \begin{equation}
-Z=2e^{-\beta 8 J}+2e^{\beta 8 J}+12
+Z=2e^{-8\beta}+2e^{8\beta}+12
 \end{equation}
 
 \noindent The mean energy and magnetization is given by respectively:
 
 \begin{equation}
-E=\frac{1}{Z} \sum\limits_{i=1}^{16}  E_{i}e^{-J*E_{i}\beta}=\frac{-8e^{\beta 8J }+8e^{-\beta 8J}}{e^{-\beta 8 J}+e^{\beta 8 J}+6}
+E=\frac{1}{Z} \sum\limits_{i=1}^{16}  E_{i}e^{-J*E_{i}\beta}=\frac{-16e^{8\beta}+16e^{-8\beta}}{Z}
 \end{equation}
 and
 \begin{equation}
-M=\frac{1}{Z}\sum\limits_{i=1}^{16}  M_{i}e^{-J*E_{i}\beta}=\frac{4e^{\beta 8J}+8}{e^{-\beta 8 J}+e^{\beta 8 J}+6}
+M=\frac{1}{Z}\sum\limits_{i=1}^{16}  M_{i}e^{-J*E_{i}\beta}=\frac{8e^{8\beta}+16}{Z}
 \end{equation}
 
 \noindent The specific heat is given as the variance of energy divided by $k_b T^2$:
 
 \begin{equation} 
-c_v =\frac{64}{k_b T} \frac{1+3cosh(8\beta)}{(cosh(8\beta)+3)^2}
+c_v =\frac{1}{k_b T^2} \Bigg(\frac{128e^{8\beta}+128e^-8\beta}{Z}-\Big(\frac{-16e^{8\beta}+16e^{-8\beta}}{Z}\Big)^2\Bigg)
 \end{equation}
 
 \noindent The variance of magnetism divided by $k_b T$ reveals the susceptibility.
@@ -132,14 +132,14 @@ X=\frac{1}{k_b T} \Bigg(\frac{32^{\frac{8}{k_b T}}+32}{Z} - \Big(\frac{8e^{\frac
 T_c(L)-T_c(L=\infty)=aL^{-\frac{1}{\nu}}
 \end{equation} 
 
-\noindent Where $L$ is the size of the lattice, $T_c$ is the critical temperature and $\nu$ is a constant equal to $1$. $T_c(L)$ is found graphically, so all we need to do is solve for $T_c(L=\infty)$ and $a$ numerically by using this equation
+\noindent Where $L$ is the size of the lattice, $T_c$ is the critical temperature and $\nu$ is a constant equal to $1$. $T_c(L)$ is found graphically, so all we need to do is solve for $T_c(L=\infty)$ and $a$ numerically by using this equation:
 
 
 \begin{equation}
 T_c(L)=T_c(L=\infty)+aL^{-\frac{1}{\nu}}
 \end{equation}
 
-This was done using the least squares rule for linear regression. 
+\noindent Taking a closer look at equation 8 reveals that it in fact has the simple form $Y=Ax + B$. Where $T_c(L=\infty)$ is equal to the constant B, and $\frac{a}{L}$ is equal to the term $Ax$, where $L$ is the variable. As $T_c(L)$ is found graphically, it is a simple process to do a linear regression, and find where this graph crosses the y-axis. This means that $\frac{a}{L}=0\Rightarrow L=\infty$ and the value at the crossing pint is equal to $T_c(L=\infty)$  
 
 
 
@@ -371,15 +371,84 @@ The results for magnetization and susceptibility tell much of the same story. Th
 \end{tabular}
 }
 
-\noindent The probability distribution shown in \figref{Probability} show that higher energies are to be expected when the temperature is increased. When the temperature is low, there are only a few possible energy states. This is in accordance with the energyplots in \figref{RandomEnergy} and \figref{UpEnergy}. The variance in table 3 is increasing up to $T=2.25$ before decreasing again. This is also shown in \figref{Probability}. The graph representing $T=2.25$ is much wider than all the other graphs. The probability distribution for $T=2.4$ is shown in \figref{ProbBoth}. The graph is skewed towards higher energies. WHY ARE THEY SKEWED?
+\noindent The probability distribution shown in \figref{Probability} show that higher energies are to be expected when the temperature is increased. When the temperature is low, there are only a few possible energy states. This is in accordance with the energyplots in \figref{EnergyPerCycle1} and \figref{EnergyPerCycle24}. The variance in table 3 is increasing up to $T=2.25$ before decreasing again. This is also shown in \figref{Probability}. The graph representing $T=2.25$ is much wider than all the other graphs. The probability distribution for $T=2.4$ is shown in \figref{ProbBoth}. The graph is negatively skewed (right modal), and there are no significant differences between starting from a random or all up initial configuration (\figref{ProbBoth}). 
 
-For T mindre og lik 2.25 er de skewed positivt, og negativt for t større enn 2.25
 
+\begin{figure} [H]
+\centerline{
+\includegraphics[scale=0.26]{energyVSt.jpg}
+}
+\caption{Mean energy per lattice point plotted against temperature for different lattice sizes}
+\label{fig:EnergyVSt}
+\end{figure}
+
+\noindent Even when computed for different lattice sizes, the energy at different lattice sizes stay relatively equal. There is one major anomaly though, this occurs around $T=2,3$ i.e close to the critical temperature. 
+
+
+\begin{figure} [H]
+\centerline{
+\includegraphics[scale=0.26]{magnetizationVSt.jpg}
+}
+\caption{Mean absolute magnetization per lattice point plotted against temperature for different lattice sizes}
+\label{fig:MagnVSt}
+\end{figure}
+
+\noindent The magnetization starts off relatively equal, but splits when getting closer to the critical temperature. In contrast to the energy, the magnetization does not rejoin. The magnetization also decreases drastically, and goes toward zero. 
+
+\begin{figure} [H]
+\centerline{
+\includegraphics[scale=0.26]{heatVSt.jpg}
+}
+\caption{$C_v$ per lattice point plotted against temperature for different lattice sizes}
+\label{fig:HeatVSt}
+\end{figure}
+
+\noindent On all the graphs for specific heat, there is a peak at 2.3. There is however a difference; for $T=2.25$ the specific heat seems to be growing when the lattice size increases.
+
+\begin{figure} [H]
+\centerline{
+\includegraphics[scale=0.26]{susceptibilityVSt.jpg}
+}
+\caption{Susceptibility per lattice point plotted against temperature for different lattice sizes}
+\label{fig:SusVSt}
+\end{figure}
+
+\noindent As in \figref{HeatVSt}, the susceptibility also has a peak at $T=2.3$.\\
+
+
+\noindent The results from \figref{EnergyVSt}, \figref{MagnVSt}, \figref{HeatVSt} and \figref{SusVSt} were used to extract the critical temperature. The anomalies in all of these figures occur around $T=2.3$. In \figref{HeatVSt} and \figref{SusVSt}, these anomalies are clear, and manifest as big peaks. All of the peaks in these two figures occur on $T=2.3$, so running the linear regression presented earlier would only yield:
+
+$$ T_c(L=\infty)=2.3$$
+
+\noindent From the literature, it is known that the real critical temperature is equal to:
+
+$$ T_c(L=\infty)=\frac{2}{ln(1+\sqrt{2})}\approx 2.269$$
+
+Possible ways to fix this will error will be presented.
   
+{\LARGE\bf
+Errors and timing
+}\\
 
+\noindent As the system being examined is based upon probability, there will always be some degree off error. This problem would only be solved if there was a way to obtain an infinite amount of Monte Carlo cycles. On account of this not being possible, the results obtained by the program agree to a reasonable extent. This is true for all but the critical temperature. The program was run with a temperature step of $0.05$. This was clearly not enough to get a proper result. There are two ways to fix this, either to decrease the temperature step, or to run for bigger lattice dimensions. Considering increase in computation time, the preferred one would probably be to decrease the temperature step. \figref{HeatVSt} shows that the specific heat at $T=2.25$ increases in relation to at $T=2.3$. If the program was run an additional time with a lattice size bigger than $100 \times 100$, the result would be closer to what found in the literature. The best way to fix these problems would probably be a combination of decreasing the temperature range, to save time, decreasing the temperature step and increasing the lattice sizes to increase accuracy.\\      
 
-
-
+\begin{center}
+\textbf{Table 4:} Run time for computation of different matrix sizes with paralellized code. The program was in this instance run from $T=2.0\Rightarrow T=3.0$ with temperature step of $0.05$
+\end{center} 
+\centerline{
+\begin{tabular}{|c|c|}
+\hline
+  Lattice size & Run time in seconds\\
+\hline
+  60x60 & 3996.57\\
+\hline
+  80x80 & 7081.15\\
+\hline
+  100x100 & 18630.9\\
+\hline
+\end{tabular}
+}
+As stated earlier, the computation of bigger dimension lattices takes long time. Therefore, the code was paralellized using MPI. The computer used for this, had 8 cores, effectively making the computations 8 times faster. Without paralellization, the program would have used about 40 hours to run for a $ 100 \times 100 $ lattice over the 20 temperature steps (Table 4).  
 
 \newpage
 {\LARGE\bf
@@ -389,33 +458,30 @@ Discussion
 \noindent For the $2 \times 2$ case, the expection values showed distinct sensitivities (table 1,2). The mean energy and mean absolute magnetization converged quickly towards the analytic value. Both were accurate with three leading digits for as few as $10^4$ Monte Carlo cycles. When increasing the number of Monte Carlo cycles to $10^6$ the relative error decreases to a fraction of a $\permil$. The specific heat and susceptibility were both sensitive. The specific heat was accurate up to two or three leading digits, depending on the starting matrix, when computed with $10^6$ Monte Carlo cycles. The specific heat was accurate up to only one or two leading digits with $10^6$ Monte Carlo cycles. The program did not produce the same results for each run. This is due to the random nature of the system being examined.\\
 
 \noindent The $20 \times 20$ case was studied with an emphasis on when the most likely state is reached. As shown in \figref{AverageEnergy1} and \figref{AverageMagn1} the graphs converge quickly towards an equilibrium when $T=1$. This is contrasted by the mean energy and mean absolute magnetization when the temperature is $2.4$(\figref{AverageEnergy24},\figref{AverageMagn24}). This system is governed by the Boltzmann distribution:
-
-$$ e^{-\frac{\vartriangle E}{k_bT}}$$
-
+\begin{equation}
+ e^{-\frac{\vartriangle E}{k_bT}}
+\end{equation}
 \noindent To increase the energy, the random number used in the Monte Carlo test must be lower than $e^{-\frac{\vartriangle E}{k_bT}}$  (step 6). At low temperatures, the system will allow fewer energy increases compared to for higher temperatures. This results in faster converging towards the equilibrium for lower temperatures.\\
 
-\noindent Another way to look at this is through a pure physical perspective. When there are high temperatures, by definition, there is more energy in the system. This will lead to more flips, and a higher degree of disorder. With less energy in the system, it is less likely to flip, hence faster converging to an equilibrium.\\
+\noindent Another way to look at this is through a pure physical perspective. There is, by definition, more energy in the system when the temperature is higher. This will lead to more flips, and a higher degree of disorder. With less energy in the system, it is less likely to flip, hence faster converging to an equilibrium.\\
 
-\noindent When starting with a random matrix, there are generally more flips (\figref{RandomAccept},\figref{UpAccept}). When the number of Monte Carlo cycles are increased, this difference becomes almost negligible. When the equilibrium is reached, the increase in accepted flips will behave in a similar fashion. This can be read out of \figref{RandomAccept} and \figref{UpAccept} for $T=1$, as after the first few cycles, the growth of accepted configurations grow at the same rate. For increasing temperature, the number of accepted configurations start growing exponentially. This true for both a random and ordered starting matrix, and is in line with what is to be expected, as the Boltzmann distribution has an exponential relation with temperature.(ER DETTE GREIT Å SKRIVE (skriv om uansett)).\\
+\noindent When starting with a random matrix, there are generally more flips (\figref{RandomAccept},\figref{UpAccept}). When the number of Monte Carlo cycles are increased, this difference becomes almost negligible (\figref{accept}). When the equilibrium is reached, the increase in accepted flips will behave in a similar fashion. This can be read out of \figref{RandomAccept} and \figref{UpAccept} for $T=1$, as after the first few cycles, the growth of accepted configurations grow at the same rate. For increasing temperature, the number of accepted configurations start growing exponentially. This true for both a random and ordered starting matrix. This is in line with what is to be expected, as the Boltzmann distribution is depending on the temperature (equation 9). Another interesting thing to look at is how both the random and all up initial matrix accept many moves in the first few cycles for $T=2.4$. This is not shown clearly in \figref{RandomAccept} and \figref{UpAccept}, as the total number of accepted configurations become exceedingly high. Nonetheless, it can be read out of the average energy and mean absolute magnetization plots (\figref{AverageEnergy24}, \figref{AverageMagn1}). None of the initial configurations are at the equilibrium, hence they will accept many flips the first few cycles to converge to the equilibrium.  \\
 
 
-\noindent The probability distribution for $T=2.4$ seem to have av negative skewness (right-modal)(\figref{ProbBoth}). This means that the majority of the energy occurrences happen to the left of the mean value. This again means that the system prefers to jump down in energy, which is to be expected,as it always wants to be at the lowest possible energy state. Another interesting thing to look at, is how the probability distribution behaves for different temperatures (\figref{Probability}). For lower temperatures, there are only a few lower energy levels that are are occurring frequently. The probability distributions are shifted towards higher energies as the temperatures increase. The distributions become wider moving towards the critical temperature, before narrowing again. This is mirrored by the variance shown in table 3. 
+\noindent The probability distribution for $T=2.4$ seem to have av negative skewness (right-modal)(\figref{ProbBoth}). This means that the majority of the energy occurrences happen to the left of the mean value. This again means that the system prefers to jump down in energy, which is to be expected,as it always wants to be at the lowest possible energy state. Another interesting thing to look at, is how the probability distribution behaves for different temperatures (\figref{Probability}). For lower temperatures, there are only a few lower energy levels that are are occurring frequently. The probability distributions are shifted towards higher energies as the temperature increases. The distributions become wider moving towards the critical temperature, before narrowing again. This is mirrored by the variance shown in table 3. \\
+
+
+\noindent The critical temperature was calculated to be $2.3$. This differs somewhat for the reasons explained in the errors part. It is still clear that something extraordinary occurs in this region. This is the only place the energies differ (\figref{EnergyVSt}). The susceptibility and specific heat has a peak (\figref{HeatVSt}, \figref{SusVSt}), and the magnetization goes rapidly towards zero. As the graphs tend to get steeper for increasing lattice sizes, it is okay to assume that this sudden shift from finite mean absolute magnetization, to almost zero magnetization will be even more rapid for an infinite lattice. Moreover, the graphs also indicate that the mean absolute magnetization would get even closer to zero with an infinite lattice (\figref{MagnVSt}). This is confirmed by looking at the literature, where it is stated that the slope of the magnetization would become infinite for an infinite lattice (Hjort-Jensen,2015). The phase transition in the two dimensional Ising model is of second order. It manifests itself as an abrupt change from a mean magnetization $M \neq 0$ below $T_c$, to $M=0$ above $T_c$. 
+
+
 
 
   
-
-
-
-
-
-
-
-
 \newpage
 {\LARGE\bf
-Conclusion
+Concluding remarks
 }
-
+The metropolis algorithm has proved to 
 
 
 
@@ -436,5 +502,7 @@ Conclusion
 Reference list
 }\\
 Hjort-Jensen,M., 2015. Computational physics, accessible at course github repository. 551 pages
+
+
 
 \end{document}

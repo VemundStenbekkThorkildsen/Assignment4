@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.21)  16 NOV 2017 18:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.21)  18 NOV 2017 18:48
 entering extended mode
 **./Assignment4.tex
 (Assignment4.tex
@@ -1046,70 +1046,134 @@ l.344
                                                   \fi \fi 
 l.344 
        <./accept.jpg> <./OccurancesRandom.jpg> <./OccurancesUp.jpg>]
+<energyVSt.jpg, id=123, 1927.2pt x 989.6975pt>
+File: energyVSt.jpg Graphic file (type jpg)
+ <use energyVSt.jpg>
+Package pdftex.def Info: energyVSt.jpg used on input line 380.
+(pdftex.def)             Requested size: 501.0602pt x 257.31528pt.
+ [11pdfTeX warning (ext4): destination with the same identifier (name{figure.13
+}) has been already used, duplicate ignored
 
-LaTeX Warning: Reference `fig:RandomEnergy' on page 11 undefined on input line 
-374.
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.384 
+       <./ProbabilityRandomNew.jpg>]
+<magnetizationVSt.jpg, id=129, 1927.2pt x 989.6975pt>
+File: magnetizationVSt.jpg Graphic file (type jpg)
 
+<use magnetizationVSt.jpg>
+Package pdftex.def Info: magnetizationVSt.jpg used on input line 391.
+(pdftex.def)             Requested size: 501.0602pt x 257.31528pt.
+ [12pdfTeX warning (ext4): destination with the same identifier (name{figure.14
+}) has been already used, duplicate ignored
 
-LaTeX Warning: Reference `fig:UpEnergy' on page 11 undefined on input line 374.
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.397 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+15}) has been already used, duplicate ignored
 
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.397 
+       <./energyVSt.jpg> <./magnetizationVSt.jpg>]
+<heatVSt.jpg, id=136, 1927.2pt x 989.6975pt>
+File: heatVSt.jpg Graphic file (type jpg)
+ <use heatVSt.jpg>
+Package pdftex.def Info: heatVSt.jpg used on input line 401.
+(pdftex.def)             Requested size: 501.0602pt x 257.31528pt.
 
-[11pdfTeX warning (ext4): destination with the same identifier (name{figure.13}
+<susceptibilityVSt.jpg, id=137, 1927.2pt x 989.6975pt>
+File: susceptibilityVSt.jpg Graphic file (type jpg)
+
+<use susceptibilityVSt.jpg>
+Package pdftex.def Info: susceptibilityVSt.jpg used on input line 411.
+(pdftex.def)             Requested size: 501.0602pt x 257.31528pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 416--417
+
+ []
+
+[13pdfTeX warning (ext4): destination with the same identifier (name{figure.16}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.384 \newpage
-               <./ProbabilityRandomNew.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 389--390
+l.417 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+17}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.417 
+       <./heatVSt.jpg> <./susceptibilityVSt.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 430--432
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 395--396
+Underfull \hbox (badness 10000) in paragraph at lines 433--434
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 458--459
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 397--398
+Underfull \hbox (badness 10000) in paragraph at lines 463--465
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 399--400
+Underfull \hbox (badness 10000) in paragraph at lines 466--467
 
  []
 
 
-Overfull \hbox (9.70598pt too wide) in paragraph at lines 402--403
+LaTeX Warning: Reference `fig:accept' on page 15 undefined on input line 468.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--469
+
+ []
+
+
+Overfull \hbox (9.70598pt too wide) in paragraph at lines 471--472
 \OT1/cmr/m/n/10 The prob-a-bil-ity dis-tri-bu-tion for $\OML/cmm/m/it/10 T \OT1
 /cmr/m/n/10 = 2\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 4$ seem to have av neg-a-tive 
 skew-ness (right-modal)(figure []12[]).
  []
 
-[12] [13]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 440.
- [14]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 440.
+
+Underfull \hbox (badness 10000) in paragraph at lines 471--472
+
+ []
+
+[15] [16] [17]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 508.
+ [18]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 508.
  (Assignment4.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 440.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 440.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 508.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 508.
 Package rerunfilecheck Info: File `Assignment4.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 440.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 508.
  ) 
 Here is how much of TeX's memory you used:
- 9357 strings out of 493323
- 131388 string characters out of 3139066
- 241205 words of memory out of 3000000
- 12704 multiletter control sequences out of 15000+200000
+ 9389 strings out of 493323
+ 131898 string characters out of 3139066
+ 241658 words of memory out of 3000000
+ 12723 multiletter control sequences out of 15000+200000
  9557 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,10n,40p,877b,400s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,10n,40p,1397b,402s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\vemun\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\wasy\dpi600\
 wasy10.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pf
 b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
@@ -1124,9 +1188,9 @@ b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam5.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on Assignment4.pdf (14 pages, 2492071 bytes).
+Output written on Assignment4.pdf (18 pages, 2858364 bytes).
 PDF statistics:
- 210 PDF objects out of 1000 (max. 8388607)
- 46 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 256 PDF objects out of 1000 (max. 8388607)
+ 55 named destinations out of 1000 (max. 500000)
+ 116 words of extra memory for PDF output out of 10000 (max. 10000000)
 
